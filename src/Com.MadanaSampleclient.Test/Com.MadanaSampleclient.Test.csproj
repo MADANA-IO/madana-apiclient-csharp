@@ -81,7 +81,7 @@ The version of the OpenAPI document: 0.4.12
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\Com.MadanaSampleclient\Com.MadanaSampleclient.csproj">
-          <Project>{372259B4-25DD-4BBB-8C0E-E9EA34A295A0}</Project>
+          <Project>{5EAC5153-57A1-4A6C-BF51-A65149CD93E5}</Project>
           <Name>Com.MadanaSampleclient</Name>
       </ProjectReference>
   </ItemGroup>

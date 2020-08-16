@@ -12,7 +12,7 @@ The version of the OpenAPI document: 0.4.12
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{372259B4-25DD-4BBB-8C0E-E9EA34A295A0}</ProjectGuid>
+    <ProjectGuid>{5EAC5153-57A1-4A6C-BF51-A65149CD93E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Com.MadanaSampleclient</RootNamespace>
