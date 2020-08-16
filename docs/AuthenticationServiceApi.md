@@ -1,4 +1,4 @@
-# Com.MadanaSampleclient.Api.AuthenticationServiceApi
+# Com.Madana.APIClient.Api.AuthenticationServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -31,9 +31,9 @@ Authenticates a new application and returns the token
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -107,9 +107,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -185,9 +185,9 @@ Authenticates a new user and returns the token (  forbidden if the credentials c
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -260,9 +260,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -338,9 +338,9 @@ Returns the AUthorization URL to verify a Twitter Accounts
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -409,9 +409,9 @@ Returns a nonce for the client which is used as content for the to be created si
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -487,9 +487,9 @@ Used to validate the active connection with the API
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -559,9 +559,9 @@ Returns the AUthorization URL to verify a Twitter Accounts
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -630,9 +630,9 @@ Used as Callback URL when users have successfully authorized their facbeook acco
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -703,9 +703,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -775,9 +775,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {

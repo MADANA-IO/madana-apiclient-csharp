@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0EnclaveRunningAttestationApproval
+# Com.Madana.APIClient.Model.XmlNs0EnclaveRunningAttestationApproval
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonMDNPasswordReset
+# Com.Madana.APIClient.Model.JsonMDNPasswordReset
 
 ## Properties
 

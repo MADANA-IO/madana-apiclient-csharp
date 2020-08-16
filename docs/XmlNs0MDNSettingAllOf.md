@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0MDNSettingAllOf
+# Com.Madana.APIClient.Model.XmlNs0MDNSettingAllOf
 
 ## Properties
 

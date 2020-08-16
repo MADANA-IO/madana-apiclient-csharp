@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonWireguardInterface
+# Com.Madana.APIClient.Model.JsonWireguardInterface
 
 ## Properties
 

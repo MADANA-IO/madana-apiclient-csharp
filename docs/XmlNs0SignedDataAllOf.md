@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0SignedDataAllOf
+# Com.Madana.APIClient.Model.XmlNs0SignedDataAllOf
 
 ## Properties
 

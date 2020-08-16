@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonMDNMailAddress
+# Com.Madana.APIClient.Model.JsonMDNMailAddress
 
 ## Properties
 

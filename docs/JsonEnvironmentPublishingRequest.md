@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonEnvironmentPublishingRequest
+# Com.Madana.APIClient.Model.JsonEnvironmentPublishingRequest
 
 ## Properties
 

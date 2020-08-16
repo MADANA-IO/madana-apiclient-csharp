@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0NodeInfoAllOf
+# Com.Madana.APIClient.Model.XmlNs0NodeInfoAllOf
 
 ## Properties
 

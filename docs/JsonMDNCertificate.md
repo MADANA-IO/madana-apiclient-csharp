@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonMDNCertificate
+# Com.Madana.APIClient.Model.JsonMDNCertificate
 
 ## Properties
 

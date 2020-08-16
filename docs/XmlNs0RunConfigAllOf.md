@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0RunConfigAllOf
+# Com.Madana.APIClient.Model.XmlNs0RunConfigAllOf
 
 ## Properties
 

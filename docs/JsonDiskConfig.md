@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonDiskConfig
+# Com.Madana.APIClient.Model.JsonDiskConfig
 
 ## Properties
 

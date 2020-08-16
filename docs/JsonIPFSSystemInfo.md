@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonIPFSSystemInfo
+# Com.Madana.APIClient.Model.JsonIPFSSystemInfo
 
 ## Properties
 

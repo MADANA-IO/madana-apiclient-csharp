@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0IPFSSystemInfo
+# Com.Madana.APIClient.Model.XmlNs0IPFSSystemInfo
 
 ## Properties
 

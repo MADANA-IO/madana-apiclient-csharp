@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0NetworkInterfaceAllOf
+# Com.Madana.APIClient.Model.XmlNs0NetworkInterfaceAllOf
 
 ## Properties
 

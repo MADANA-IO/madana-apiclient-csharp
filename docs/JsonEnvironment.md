@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonEnvironment
+# Com.Madana.APIClient.Model.JsonEnvironment
 
 ## Properties
 

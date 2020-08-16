@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0DiskConfigAllOf
+# Com.Madana.APIClient.Model.XmlNs0DiskConfigAllOf
 
 ## Properties
 

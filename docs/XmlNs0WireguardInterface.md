@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0WireguardInterface
+# Com.Madana.APIClient.Model.XmlNs0WireguardInterface
 
 ## Properties
 

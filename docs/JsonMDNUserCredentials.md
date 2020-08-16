@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonMDNUserCredentials
+# Com.Madana.APIClient.Model.JsonMDNUserCredentials
 
 ## Properties
 

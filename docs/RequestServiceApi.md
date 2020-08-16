@@ -1,4 +1,4 @@
-# Com.MadanaSampleclient.Api.RequestServiceApi
+# Com.Madana.APIClient.Api.RequestServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -34,9 +34,9 @@ Is used to upload and park the data till the AnalysisRequest gets processed
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -116,9 +116,9 @@ Endpoint is called from the Analysis Processing entity to submit the result
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -198,9 +198,9 @@ Endpoint used to create a new Analysis Request
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -275,9 +275,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -351,9 +351,9 @@ Is called from the APE to request all parked datasets. Returns the transmitted d
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -432,9 +432,9 @@ Returns UUIDs of existing analyses.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -522,9 +522,9 @@ Is called from the APE to request all parked datasets. Returns the transmitted d
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -603,9 +603,9 @@ Returns the details for certain Request. When requesting an analysis a view of t
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -681,9 +681,9 @@ Can be called from creator to request the AnalysisResult.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -760,9 +760,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -830,9 +830,9 @@ Used to give consent for request. If the Endpoint is called from the creator of 
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -910,9 +910,9 @@ Endpoint used initialized addition datacollection parameters for requester
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -991,9 +991,9 @@ Is called from the APE to request all parked datasets. Returns the transmitted d
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -1072,9 +1072,9 @@ Endpoint is called from the Analysis Processing entity to submit the result
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {

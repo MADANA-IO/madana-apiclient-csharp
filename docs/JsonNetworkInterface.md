@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonNetworkInterface
+# Com.Madana.APIClient.Model.JsonNetworkInterface
 
 ## Properties
 

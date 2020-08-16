@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonProcess
+# Com.Madana.APIClient.Model.JsonProcess
 
 ## Properties
 

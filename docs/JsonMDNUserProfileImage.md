@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonMDNUserProfileImage
+# Com.Madana.APIClient.Model.JsonMDNUserProfileImage
 
 ## Properties
 

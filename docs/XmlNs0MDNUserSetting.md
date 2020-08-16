@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0MDNUserSetting
+# Com.Madana.APIClient.Model.XmlNs0MDNUserSetting
 
 ## Properties
 

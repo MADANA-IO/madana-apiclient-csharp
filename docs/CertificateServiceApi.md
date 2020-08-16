@@ -1,4 +1,4 @@
-# Com.MadanaSampleclient.Api.CertificateServiceApi
+# Com.Madana.APIClient.Api.CertificateServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -23,9 +23,9 @@ Issues certificates for logged-in users
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -98,9 +98,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -166,9 +166,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {

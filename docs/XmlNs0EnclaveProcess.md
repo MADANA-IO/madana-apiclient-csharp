@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0EnclaveProcess
+# Com.Madana.APIClient.Model.XmlNs0EnclaveProcess
 
 ## Properties
 

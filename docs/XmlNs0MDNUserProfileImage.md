@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0MDNUserProfileImage
+# Com.Madana.APIClient.Model.XmlNs0MDNUserProfileImage
 
 ## Properties
 

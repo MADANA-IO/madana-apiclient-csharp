@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonRunConfig
+# Com.Madana.APIClient.Model.JsonRunConfig
 
 ## Properties
 

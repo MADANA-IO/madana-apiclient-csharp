@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonEnclaveProcess
+# Com.Madana.APIClient.Model.JsonEnclaveProcess
 
 ## Properties
 

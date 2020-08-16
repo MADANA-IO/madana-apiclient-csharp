@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonEnclaveRunningAttestation
+# Com.Madana.APIClient.Model.JsonEnclaveRunningAttestation
 
 ## Properties
 

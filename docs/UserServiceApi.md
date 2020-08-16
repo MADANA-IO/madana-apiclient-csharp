@@ -1,4 +1,4 @@
-# Com.MadanaSampleclient.Api.UserServiceApi
+# Com.Madana.APIClient.Api.UserServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -29,9 +29,9 @@ Creates a new user object
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -106,9 +106,9 @@ Deletes an User based on the provided id and securitycontext
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -181,9 +181,9 @@ Deletes linked account from the user and securitycontext
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -258,9 +258,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -330,9 +330,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -402,9 +402,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -474,9 +474,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -548,9 +548,9 @@ No authorization required
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {
@@ -624,9 +624,9 @@ Updates Userproperties based on the provided user object
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {

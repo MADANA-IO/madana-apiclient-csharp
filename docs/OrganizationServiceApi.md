@@ -1,4 +1,4 @@
-# Com.MadanaSampleclient.Api.OrganizationServiceApi
+# Com.Madana.APIClient.Api.OrganizationServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -19,9 +19,9 @@ Method | HTTP request | Description
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using Com.MadanaSampleclient.Api;
-using Com.MadanaSampleclient.Client;
-using Com.MadanaSampleclient.Model;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
 
 namespace Example
 {

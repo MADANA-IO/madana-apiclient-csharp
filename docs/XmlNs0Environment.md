@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.XmlNs0Environment
+# Com.Madana.APIClient.Model.XmlNs0Environment
 
 ## Properties
 

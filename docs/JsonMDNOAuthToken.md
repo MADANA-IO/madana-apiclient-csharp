@@ -1,5 +1,5 @@
 
-# Com.MadanaSampleclient.Model.JsonMDNOAuthToken
+# Com.Madana.APIClient.Model.JsonMDNOAuthToken
 
 ## Properties
 
