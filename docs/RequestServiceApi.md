@@ -9,10 +9,11 @@ Method | HTTP request | Description
 [**CreateNewRequest**](RequestServiceApi.md#createnewrequest) | **POST** /requests | Endpoint used to create a new Analysis Request.
 [**GetActions**](RequestServiceApi.md#getactions) | **GET** /requests/actions | 
 [**GetAgent**](RequestServiceApi.md#getagent) | **GET** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
-[**GetAllRequests**](RequestServiceApi.md#getallrequests) | **GET** /requests | Returns UUIDs of existing analyses.
+[**GetAllRequests2**](RequestServiceApi.md#getallrequests2) | **GET** /requests | Returns UUIDs of existing analyses.
 [**GetData**](RequestServiceApi.md#getdata) | **GET** /requests/{uuid}/data | Is called from the APE to request all parked datasets.
 [**GetRequest**](RequestServiceApi.md#getrequest) | **GET** /requests/{uuid} | Returns the details for certain Request.
 [**GetResult**](RequestServiceApi.md#getresult) | **GET** /requests/{uuid}/result | Can be called from creator to request the AnalysisResult.
+[**GetStatus**](RequestServiceApi.md#getstatus) | **GET** /requests/stats | 
 [**GiveConsent**](RequestServiceApi.md#giveconsent) | **POST** /requests/{uuid}/consent | Used to give consent for request.
 [**InitRequestParameters**](RequestServiceApi.md#initrequestparameters) | **POST** /requests/{uuid} | Endpoint used initialized addition datacollection parameters for requester.
 [**SetAgent**](RequestServiceApi.md#setagent) | **POST** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
@@ -22,7 +23,7 @@ Method | HTTP request | Description
 
 ## AddData
 
-> JsonAnalysis AddData (string uuid, string authorization = null, JsonSignedData body = null)
+> System.IO.Stream AddData (string uuid, string authorization = null, JsonSignedData body = null)
 
 Is used to upload and park the data till the AnalysisRequest gets processed.
 
@@ -52,7 +53,7 @@ namespace Example
             try
             {
                 // Is used to upload and park the data till the AnalysisRequest gets processed.
-                JsonAnalysis result = apiInstance.AddData(uuid, authorization, body);
+                System.IO.Stream result = apiInstance.AddData(uuid, authorization, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -77,7 +78,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**System.IO.Stream**
 
 ### Authorization
 
@@ -104,7 +105,7 @@ No authorization required
 
 ## CancelProcessing
 
-> JsonAnalysis CancelProcessing (string uuid, string authorization = null, JsonSignedData body = null)
+> System.IO.Stream CancelProcessing (string uuid, string authorization = null, JsonSignedData body = null)
 
 Endpoint is called from the Analysis Processing entity to submit the result.
 
@@ -134,7 +135,7 @@ namespace Example
             try
             {
                 // Endpoint is called from the Analysis Processing entity to submit the result.
-                JsonAnalysis result = apiInstance.CancelProcessing(uuid, authorization, body);
+                System.IO.Stream result = apiInstance.CancelProcessing(uuid, authorization, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -159,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**System.IO.Stream**
 
 ### Authorization
 
@@ -418,9 +419,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## GetAllRequests
+## GetAllRequests2
 
-> System.IO.Stream GetAllRequests (string authorization = null, string created = null, string history = null, string limit = null, string _new = null, string offset = null, string preview = null, string ready = null)
+> System.IO.Stream GetAllRequests2 (string authorization = null, string created = null, string history = null, string limit = null, string _new = null, string offset = null, string preview = null, string ready = null)
 
 Returns UUIDs of existing analyses.
 
@@ -437,7 +438,7 @@ using Com.MadanaSampleclient.Model;
 
 namespace Example
 {
-    public class GetAllRequestsExample
+    public class GetAllRequests2Example
     {
         public static void Main()
         {
@@ -455,12 +456,12 @@ namespace Example
             try
             {
                 // Returns UUIDs of existing analyses.
-                System.IO.Stream result = apiInstance.GetAllRequests(authorization, created, history, limit, _new, offset, preview, ready);
+                System.IO.Stream result = apiInstance.GetAllRequests2(authorization, created, history, limit, _new, offset, preview, ready);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling RequestServiceApi.GetAllRequests: " + e.Message );
+                Debug.Print("Exception when calling RequestServiceApi.GetAllRequests2: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -591,7 +592,7 @@ No authorization required
 
 ## GetRequest
 
-> JsonAnalysis GetRequest (string uuid, string authorization = null)
+> System.IO.Stream GetRequest (string uuid, string authorization = null)
 
 Returns the details for certain Request.
 
@@ -620,7 +621,7 @@ namespace Example
             try
             {
                 // Returns the details for certain Request.
-                JsonAnalysis result = apiInstance.GetRequest(uuid, authorization);
+                System.IO.Stream result = apiInstance.GetRequest(uuid, authorization);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -644,7 +645,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**System.IO.Stream**
 
 ### Authorization
 
@@ -669,7 +670,7 @@ No authorization required
 
 ## GetResult
 
-> JsonAnalysisResult GetResult (string uuid, string authorization = null)
+> System.IO.Stream GetResult (string uuid, string authorization = null)
 
 Can be called from creator to request the AnalysisResult.
 
@@ -698,7 +699,7 @@ namespace Example
             try
             {
                 // Can be called from creator to request the AnalysisResult.
-                JsonAnalysisResult result = apiInstance.GetResult(uuid, authorization);
+                System.IO.Stream result = apiInstance.GetResult(uuid, authorization);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -722,7 +723,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysisResult**](JsonAnalysisResult.md)
+**System.IO.Stream**
 
 ### Authorization
 
@@ -748,9 +749,77 @@ No authorization required
 [[Back to README]](../README.md)
 
 
+## GetStatus
+
+> System.IO.Stream GetStatus ()
+
+
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Com.MadanaSampleclient.Api;
+using Com.MadanaSampleclient.Client;
+using Com.MadanaSampleclient.Model;
+
+namespace Example
+{
+    public class GetStatusExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "http://api.madana.io/rest";
+            var apiInstance = new RequestServiceApi(Configuration.Default);
+
+            try
+            {
+                System.IO.Stream result = apiInstance.GetStatus();
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling RequestServiceApi.GetStatus: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+**System.IO.Stream**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** |  |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
 ## GiveConsent
 
-> JsonAnalysis GiveConsent (string uuid, string authorization = null)
+> System.IO.Stream GiveConsent (string uuid, string authorization = null)
 
 Used to give consent for request.
 
@@ -779,7 +848,7 @@ namespace Example
             try
             {
                 // Used to give consent for request.
-                JsonAnalysis result = apiInstance.GiveConsent(uuid, authorization);
+                System.IO.Stream result = apiInstance.GiveConsent(uuid, authorization);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -803,7 +872,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**System.IO.Stream**
 
 ### Authorization
 
@@ -992,7 +1061,7 @@ No authorization required
 
 ## SetResult
 
-> JsonAnalysis SetResult (string uuid, string authorization = null, JsonSignedData body = null)
+> System.IO.Stream SetResult (string uuid, string authorization = null, JsonSignedData body = null)
 
 Endpoint is called from the Analysis Processing entity to submit the result.
 
@@ -1022,7 +1091,7 @@ namespace Example
             try
             {
                 // Endpoint is called from the Analysis Processing entity to submit the result.
-                JsonAnalysis result = apiInstance.SetResult(uuid, authorization, body);
+                System.IO.Stream result = apiInstance.SetResult(uuid, authorization, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -1047,7 +1116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**System.IO.Stream**
 
 ### Authorization
 
