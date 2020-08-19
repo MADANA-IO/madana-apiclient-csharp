@@ -5,8 +5,8 @@ All URIs are relative to *http://api.madana.io/rest*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AuthenticateCertificate**](CertificateServiceApi.md#authenticatecertificate) | **POST** /certificates | Issues certificates for logged-in users.
-[**GetCertificate**](CertificateServiceApi.md#getcertificate) | **GET** /certificates/root | 
-[**GetCertificate_0**](CertificateServiceApi.md#getcertificate_0) | **GET** /certificates/{fingerprint} | 
+[**GetCertificateByFingerprint**](CertificateServiceApi.md#getcertificatebyfingerprint) | **GET** /certificates/{fingerprint} | 
+[**GetRootCertificate**](CertificateServiceApi.md#getrootcertificate) | **GET** /certificates/root | 
 
 
 
@@ -87,9 +87,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## GetCertificate
+## GetCertificateByFingerprint
 
-> System.IO.Stream GetCertificate ()
+> System.IO.Stream GetCertificateByFingerprint (string fingerprint)
 
 
 
@@ -104,21 +104,22 @@ using Com.Madana.APIClient.Model;
 
 namespace Example
 {
-    public class GetCertificateExample
+    public class GetCertificateByFingerprintExample
     {
         public static void Main()
         {
             Configuration.Default.BasePath = "http://api.madana.io/rest";
             var apiInstance = new CertificateServiceApi(Configuration.Default);
+            var fingerprint = fingerprint_example;  // string | 
 
             try
             {
-                System.IO.Stream result = apiInstance.GetCertificate();
+                System.IO.Stream result = apiInstance.GetCertificateByFingerprint(fingerprint);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling CertificateServiceApi.GetCertificate: " + e.Message );
+                Debug.Print("Exception when calling CertificateServiceApi.GetCertificateByFingerprint: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -129,7 +130,10 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fingerprint** | **string**|  | 
 
 ### Return type
 
@@ -155,9 +159,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## GetCertificate_0
+## GetRootCertificate
 
-> System.IO.Stream GetCertificate_0 (string fingerprint)
+> System.IO.Stream GetRootCertificate ()
 
 
 
@@ -172,22 +176,21 @@ using Com.Madana.APIClient.Model;
 
 namespace Example
 {
-    public class GetCertificate_0Example
+    public class GetRootCertificateExample
     {
         public static void Main()
         {
             Configuration.Default.BasePath = "http://api.madana.io/rest";
             var apiInstance = new CertificateServiceApi(Configuration.Default);
-            var fingerprint = fingerprint_example;  // string | 
 
             try
             {
-                System.IO.Stream result = apiInstance.GetCertificate_0(fingerprint);
+                System.IO.Stream result = apiInstance.GetRootCertificate();
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling CertificateServiceApi.GetCertificate_0: " + e.Message );
+                Debug.Print("Exception when calling CertificateServiceApi.GetRootCertificate: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -198,10 +201,7 @@ namespace Example
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fingerprint** | **string**|  | 
+This endpoint does not need any parameter.
 
 ### Return type
 

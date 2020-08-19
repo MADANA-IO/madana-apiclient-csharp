@@ -4,7 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateObject2**](UserServiceApi.md#createobject2) | **POST** /users | Creates a new user object.
+[**CreateObject**](UserServiceApi.md#createobject) | **POST** /users | Creates a new user object.
 [**DeleteObject**](UserServiceApi.md#deleteobject) | **DELETE** /users/{username} | Deletes an User based on the provided id and securitycontext.
 [**DeleteObject_0**](UserServiceApi.md#deleteobject_0) | **DELETE** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
 [**GetAvatars**](UserServiceApi.md#getavatars) | **GET** /users/{username}/avatars | 
@@ -12,13 +12,13 @@ Method | HTTP request | Description
 [**GetObject2**](UserServiceApi.md#getobject2) | **GET** /users/{username} | 
 [**SetAvatar**](UserServiceApi.md#setavatar) | **POST** /users/{username}/avatars | 
 [**SetSettings**](UserServiceApi.md#setsettings) | **POST** /users/{username}/settings | 
-[**UpdateObject2**](UserServiceApi.md#updateobject2) | **PUT** /users/{username} | Updates Userproperties based on the provided user object.
+[**UpdateObject**](UserServiceApi.md#updateobject) | **PUT** /users/{username} | Updates Userproperties based on the provided user object.
 
 
 
-## CreateObject2
+## CreateObject
 
-> System.IO.Stream CreateObject2 (string referrer = null, JsonMDNUser body = null)
+> System.IO.Stream CreateObject (string referrer = null, JsonMDNUser body = null)
 
 Creates a new user object.
 
@@ -35,7 +35,7 @@ using Com.Madana.APIClient.Model;
 
 namespace Example
 {
-    public class CreateObject2Example
+    public class CreateObjectExample
     {
         public static void Main()
         {
@@ -47,12 +47,12 @@ namespace Example
             try
             {
                 // Creates a new user object.
-                System.IO.Stream result = apiInstance.CreateObject2(referrer, body);
+                System.IO.Stream result = apiInstance.CreateObject(referrer, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling UserServiceApi.CreateObject2: " + e.Message );
+                Debug.Print("Exception when calling UserServiceApi.CreateObject: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -611,9 +611,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## UpdateObject2
+## UpdateObject
 
-> System.IO.Stream UpdateObject2 (string username, JsonMDNUser body = null)
+> System.IO.Stream UpdateObject (string username, JsonMDNUser body = null)
 
 Updates Userproperties based on the provided user object.
 
@@ -630,7 +630,7 @@ using Com.Madana.APIClient.Model;
 
 namespace Example
 {
-    public class UpdateObject2Example
+    public class UpdateObjectExample
     {
         public static void Main()
         {
@@ -642,12 +642,12 @@ namespace Example
             try
             {
                 // Updates Userproperties based on the provided user object.
-                System.IO.Stream result = apiInstance.UpdateObject2(username, body);
+                System.IO.Stream result = apiInstance.UpdateObject(username, body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling UserServiceApi.UpdateObject2: " + e.Message );
+                Debug.Print("Exception when calling UserServiceApi.UpdateObject: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

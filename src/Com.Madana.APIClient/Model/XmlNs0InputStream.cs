@@ -25,26 +25,19 @@ using OpenAPIDateConverter = Com.Madana.APIClient.Client.OpenAPIDateConverter;
 namespace Com.Madana.APIClient.Model
 {
     /// <summary>
-    /// JsonMDNCertificate
+    /// XmlNs0InputStream
     /// </summary>
     [DataContract]
-    public partial class JsonMDNCertificate :  IEquatable<JsonMDNCertificate>, IValidatableObject
+    public partial class XmlNs0InputStream :  IEquatable<XmlNs0InputStream>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="JsonMDNCertificate" /> class.
+        /// Initializes a new instance of the <see cref="XmlNs0InputStream" /> class.
         /// </summary>
-        /// <param name="pem">pem.</param>
-        public JsonMDNCertificate(string pem = default(string))
+        [JsonConstructorAttribute]
+        public XmlNs0InputStream()
         {
-            this.Pem = pem;
         }
         
-        /// <summary>
-        /// Gets or Sets Pem
-        /// </summary>
-        [DataMember(Name="pem", EmitDefaultValue=false)]
-        public string Pem { get; set; }
-
         /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
@@ -52,8 +45,7 @@ namespace Com.Madana.APIClient.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class JsonMDNCertificate {\n");
-            sb.Append("  Pem: ").Append(Pem).Append("\n");
+            sb.Append("class XmlNs0InputStream {\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -74,25 +66,20 @@ namespace Com.Madana.APIClient.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as JsonMDNCertificate);
+            return this.Equals(input as XmlNs0InputStream);
         }
 
         /// <summary>
-        /// Returns true if JsonMDNCertificate instances are equal
+        /// Returns true if XmlNs0InputStream instances are equal
         /// </summary>
-        /// <param name="input">Instance of JsonMDNCertificate to be compared</param>
+        /// <param name="input">Instance of XmlNs0InputStream to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(JsonMDNCertificate input)
+        public bool Equals(XmlNs0InputStream input)
         {
             if (input == null)
                 return false;
 
-            return 
-                (
-                    this.Pem == input.Pem ||
-                    (this.Pem != null &&
-                    this.Pem.Equals(input.Pem))
-                );
+            return false;
         }
 
         /// <summary>
@@ -104,8 +91,6 @@ namespace Com.Madana.APIClient.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Pem != null)
-                    hashCode = hashCode * 59 + this.Pem.GetHashCode();
                 return hashCode;
             }
         }

@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**OutputStream** | [**Object**](.md) |  | [optional] 
 **InputStream** | [**Object**](.md) |  | [optional] 
 **Alive** | **bool** |  | [optional] 
 **ErrorStream** | [**Object**](.md) |  | [optional] 
-**OutputStream** | [**Object**](.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

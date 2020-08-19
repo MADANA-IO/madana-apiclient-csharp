@@ -5,9 +5,9 @@ All URIs are relative to *http://api.madana.io/rest*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ActivateUser**](AccountServiceApi.md#activateuser) | **GET** /account/activation/{token} | 
-[**CreateObject**](AccountServiceApi.md#createobject) | **POST** /account/password | Sends an Password reset mail to the given MailAddress.
+[**CreatePasswordReset**](AccountServiceApi.md#createpasswordreset) | **POST** /account/password | Sends an Password reset mail to the given MailAddress.
 [**RequestVerificationMail**](AccountServiceApi.md#requestverificationmail) | **GET** /account/verifymail | Used to request a new  activation-mail for the user.
-[**UpdateObject**](AccountServiceApi.md#updateobject) | **PUT** /account/password | Receives the Password reset and tries to set the provided password for the user.
+[**UpdatePassword**](AccountServiceApi.md#updatepassword) | **PUT** /account/password | Receives the Password reset and tries to set the provided password for the user.
 
 
 
@@ -83,9 +83,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## CreateObject
+## CreatePasswordReset
 
-> System.IO.Stream CreateObject (JsonMDNMailAddress body = null)
+> System.IO.Stream CreatePasswordReset (JsonMDNMailAddress body = null)
 
 Sends an Password reset mail to the given MailAddress.
 
@@ -102,7 +102,7 @@ using Com.Madana.APIClient.Model;
 
 namespace Example
 {
-    public class CreateObjectExample
+    public class CreatePasswordResetExample
     {
         public static void Main()
         {
@@ -113,12 +113,12 @@ namespace Example
             try
             {
                 // Sends an Password reset mail to the given MailAddress.
-                System.IO.Stream result = apiInstance.CreateObject(body);
+                System.IO.Stream result = apiInstance.CreatePasswordReset(body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling AccountServiceApi.CreateObject: " + e.Message );
+                Debug.Print("Exception when calling AccountServiceApi.CreatePasswordReset: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -230,9 +230,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## UpdateObject
+## UpdatePassword
 
-> System.IO.Stream UpdateObject (JsonMDNPasswordReset body = null)
+> System.IO.Stream UpdatePassword (JsonMDNPasswordReset body = null)
 
 Receives the Password reset and tries to set the provided password for the user.
 
@@ -249,7 +249,7 @@ using Com.Madana.APIClient.Model;
 
 namespace Example
 {
-    public class UpdateObjectExample
+    public class UpdatePasswordExample
     {
         public static void Main()
         {
@@ -260,12 +260,12 @@ namespace Example
             try
             {
                 // Receives the Password reset and tries to set the provided password for the user.
-                System.IO.Stream result = apiInstance.UpdateObject(body);
+                System.IO.Stream result = apiInstance.UpdatePassword(body);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling AccountServiceApi.UpdateObject: " + e.Message );
+                Debug.Print("Exception when calling AccountServiceApi.UpdatePassword: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

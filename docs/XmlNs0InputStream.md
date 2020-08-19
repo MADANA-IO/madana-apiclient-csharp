@@ -1,13 +1,10 @@
 
-# Com.Madana.APIClient.Model.JsonMDNSocialUserObject
+# Com.Madana.APIClient.Model.XmlNs0InputStream
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Platform** | **string** |  | [optional] 
-**Image** | **string** |  | [optional] 
-**Ident** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
