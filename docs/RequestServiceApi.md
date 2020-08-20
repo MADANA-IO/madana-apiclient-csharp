@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**CreateNewRequest**](RequestServiceApi.md#createnewrequest) | **POST** /requests | Endpoint used to create a new Analysis Request.
 [**GetActions**](RequestServiceApi.md#getactions) | **GET** /requests/actions | 
 [**GetAgent**](RequestServiceApi.md#getagent) | **GET** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
-[**GetAllRequests2**](RequestServiceApi.md#getallrequests2) | **GET** /requests | Returns UUIDs of existing analyses.
+[**GetAllRequests**](RequestServiceApi.md#getallrequests) | **GET** /requests | Returns UUIDs of existing analyses.
 [**GetData**](RequestServiceApi.md#getdata) | **GET** /requests/{uuid}/data | Is called from the APE to request all parked datasets.
 [**GetRequest**](RequestServiceApi.md#getrequest) | **GET** /requests/{uuid} | Returns the details for certain Request.
 [**GetResult**](RequestServiceApi.md#getresult) | **GET** /requests/{uuid}/result | Can be called from creator to request the AnalysisResult.
@@ -419,9 +419,9 @@ No authorization required
 [[Back to README]](../README.md)
 
 
-## GetAllRequests2
+## GetAllRequests
 
-> System.IO.Stream GetAllRequests2 (string authorization = null, string created = null, string history = null, string limit = null, string _new = null, string offset = null, string preview = null, string ready = null)
+> System.IO.Stream GetAllRequests (string authorization = null, string created = null, string history = null, string limit = null, string _new = null, string offset = null, string preview = null, string ready = null)
 
 Returns UUIDs of existing analyses.
 
@@ -438,7 +438,7 @@ using Com.Madana.APIClient.Model;
 
 namespace Example
 {
-    public class GetAllRequests2Example
+    public class GetAllRequestsExample
     {
         public static void Main()
         {
@@ -456,12 +456,12 @@ namespace Example
             try
             {
                 // Returns UUIDs of existing analyses.
-                System.IO.Stream result = apiInstance.GetAllRequests2(authorization, created, history, limit, _new, offset, preview, ready);
+                System.IO.Stream result = apiInstance.GetAllRequests(authorization, created, history, limit, _new, offset, preview, ready);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling RequestServiceApi.GetAllRequests2: " + e.Message );
+                Debug.Print("Exception when calling RequestServiceApi.GetAllRequests: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

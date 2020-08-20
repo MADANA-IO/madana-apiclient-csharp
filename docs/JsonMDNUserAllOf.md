@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Settings** | [**List&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
-**FirstName** | **string** |  | [optional] 
-**SocialAccounts** | [**List&lt;JsonMDNSocialUserObject&gt;**](JsonMDNSocialUserObject.md) |  | [optional] 
+**Mail** | **string** |  | [optional] 
 **Guid** | **string** |  | [optional] 
 **LastName** | **string** |  | [optional] 
-**Mail** | **string** |  | [optional] 
+**SocialAccounts** | [**List&lt;JsonMDNSocialUserObject&gt;**](JsonMDNSocialUserObject.md) |  | [optional] 
+**Settings** | [**List&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
+**FirstName** | **string** |  | [optional] 
 **Credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
