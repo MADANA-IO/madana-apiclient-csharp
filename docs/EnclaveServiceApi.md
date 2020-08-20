@@ -4,6 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddHistory**](EnclaveServiceApi.md#addhistory) | **POST** /enclaves/{uuid}/history | 
 [**ApproveEnclave**](EnclaveServiceApi.md#approveenclave) | **POST** /enclaves/{uuid}/approval | 
 [**AssignEnclaveAgent**](EnclaveServiceApi.md#assignenclaveagent) | **POST** /enclaves/{uuid}/assign | 
 [**AttestateEnclave**](EnclaveServiceApi.md#attestateenclave) | **POST** /enclaves/{uuid}/attestation | 
@@ -13,6 +14,80 @@ Method | HTTP request | Description
 [**GetEnclaves**](EnclaveServiceApi.md#getenclaves) | **GET** /enclaves | Returns UUIDs of existing analyses.
 [**KillEnclave**](EnclaveServiceApi.md#killenclave) | **POST** /enclaves/{uuid}/kill | 
 
+
+
+## AddHistory
+
+> System.IO.Stream AddHistory (string uuid, JsonSignedData body = null)
+
+
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
+
+namespace Example
+{
+    public class AddHistoryExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "http://api.madana.io/rest";
+            var apiInstance = new EnclaveServiceApi(Configuration.Default);
+            var uuid = uuid_example;  // string | 
+            var body = new JsonSignedData(); // JsonSignedData |  (optional) 
+
+            try
+            {
+                System.IO.Stream result = apiInstance.AddHistory(uuid, body);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling EnclaveServiceApi.AddHistory: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **uuid** | **string**|  | 
+ **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
+
+### Return type
+
+**System.IO.Stream**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **201** |  |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
 
 ## ApproveEnclave

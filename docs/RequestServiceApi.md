@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 ## AddData
 
-> System.IO.Stream AddData (string uuid, string authorization = null, JsonSignedData body = null)
+> System.IO.Stream AddData (string uuid, string authorization = null, JsonSignedDataUtils body = null)
 
 Is used to upload and park the data till the AnalysisRequest gets processed.
 
@@ -48,7 +48,7 @@ namespace Example
             var apiInstance = new RequestServiceApi(Configuration.Default);
             var uuid = uuid_example;  // string | 
             var authorization = authorization_example;  // string | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c (optional) 
-            var body = new JsonSignedData(); // JsonSignedData |  (optional) 
+            var body = new JsonSignedDataUtils(); // JsonSignedDataUtils |  (optional) 
 
             try
             {
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uuid** | **string**|  | 
  **authorization** | **string**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
- **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
+ **body** | [**JsonSignedDataUtils**](JsonSignedDataUtils.md)|  | [optional] 
 
 ### Return type
 
@@ -105,7 +105,7 @@ No authorization required
 
 ## CancelProcessing
 
-> System.IO.Stream CancelProcessing (string uuid, string authorization = null, JsonSignedData body = null)
+> System.IO.Stream CancelProcessing (string uuid, string authorization = null, JsonSignedDataUtils body = null)
 
 Endpoint is called from the Analysis Processing entity to submit the result.
 
@@ -130,7 +130,7 @@ namespace Example
             var apiInstance = new RequestServiceApi(Configuration.Default);
             var uuid = uuid_example;  // string | 
             var authorization = authorization_example;  // string | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c (optional) 
-            var body = new JsonSignedData(); // JsonSignedData |  (optional) 
+            var body = new JsonSignedDataUtils(); // JsonSignedDataUtils |  (optional) 
 
             try
             {
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uuid** | **string**|  | 
  **authorization** | **string**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
- **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
+ **body** | [**JsonSignedDataUtils**](JsonSignedDataUtils.md)|  | [optional] 
 
 ### Return type
 
@@ -187,7 +187,7 @@ No authorization required
 
 ## CreateNewRequest
 
-> string CreateNewRequest (string authorization = null, JsonSignedData body = null)
+> string CreateNewRequest (string authorization = null, JsonSignedDataUtils body = null)
 
 Endpoint used to create a new Analysis Request.
 
@@ -211,7 +211,7 @@ namespace Example
             Configuration.Default.BasePath = "http://api.madana.io/rest";
             var apiInstance = new RequestServiceApi(Configuration.Default);
             var authorization = authorization_example;  // string | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c (optional) 
-            var body = new JsonSignedData(); // JsonSignedData |  (optional) 
+            var body = new JsonSignedDataUtils(); // JsonSignedDataUtils |  (optional) 
 
             try
             {
@@ -236,7 +236,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **authorization** | **string**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
- **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
+ **body** | [**JsonSignedDataUtils**](JsonSignedDataUtils.md)|  | [optional] 
 
 ### Return type
 
@@ -511,7 +511,7 @@ No authorization required
 
 ## GetData
 
-> JsonSignedData GetData (string uuid, string authorization = null)
+> JsonSignedDataUtils GetData (string uuid, string authorization = null)
 
 Is called from the APE to request all parked datasets.
 
@@ -540,7 +540,7 @@ namespace Example
             try
             {
                 // Is called from the APE to request all parked datasets.
-                JsonSignedData result = apiInstance.GetData(uuid, authorization);
+                JsonSignedDataUtils result = apiInstance.GetData(uuid, authorization);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -564,7 +564,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonSignedData**](JsonSignedData.md)
+[**JsonSignedDataUtils**](JsonSignedDataUtils.md)
 
 ### Authorization
 
@@ -1061,7 +1061,7 @@ No authorization required
 
 ## SetResult
 
-> System.IO.Stream SetResult (string uuid, string authorization = null, JsonSignedData body = null)
+> System.IO.Stream SetResult (string uuid, string authorization = null, JsonSignedDataUtils body = null)
 
 Endpoint is called from the Analysis Processing entity to submit the result.
 
@@ -1086,7 +1086,7 @@ namespace Example
             var apiInstance = new RequestServiceApi(Configuration.Default);
             var uuid = uuid_example;  // string | 
             var authorization = authorization_example;  // string | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c (optional) 
-            var body = new JsonSignedData(); // JsonSignedData |  (optional) 
+            var body = new JsonSignedDataUtils(); // JsonSignedDataUtils |  (optional) 
 
             try
             {
@@ -1112,7 +1112,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uuid** | **string**|  | 
  **authorization** | **string**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
- **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
+ **body** | [**JsonSignedDataUtils**](JsonSignedDataUtils.md)|  | [optional] 
 
 ### Return type
 

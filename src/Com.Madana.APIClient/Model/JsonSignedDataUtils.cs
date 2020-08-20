@@ -25,25 +25,41 @@ using OpenAPIDateConverter = Com.Madana.APIClient.Client.OpenAPIDateConverter;
 namespace Com.Madana.APIClient.Model
 {
     /// <summary>
-    /// JsonMDNCertificate
+    /// JsonSignedDataUtils
     /// </summary>
     [DataContract]
-    public partial class JsonMDNCertificate :  IEquatable<JsonMDNCertificate>, IValidatableObject
+    public partial class JsonSignedDataUtils :  IEquatable<JsonSignedDataUtils>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="JsonMDNCertificate" /> class.
+        /// Initializes a new instance of the <see cref="JsonSignedDataUtils" /> class.
         /// </summary>
-        /// <param name="pem">pem.</param>
-        public JsonMDNCertificate(string pem = default(string))
+        /// <param name="fingerpint">fingerpint.</param>
+        /// <param name="signature">signature.</param>
+        /// <param name="data">data.</param>
+        public JsonSignedDataUtils(string fingerpint = default(string), string signature = default(string), string data = default(string))
         {
-            this.Pem = pem;
+            this.Fingerpint = fingerpint;
+            this.Signature = signature;
+            this.Data = data;
         }
         
         /// <summary>
-        /// Gets or Sets Pem
+        /// Gets or Sets Fingerpint
         /// </summary>
-        [DataMember(Name="pem", EmitDefaultValue=false)]
-        public string Pem { get; set; }
+        [DataMember(Name="fingerpint", EmitDefaultValue=false)]
+        public string Fingerpint { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Signature
+        /// </summary>
+        [DataMember(Name="signature", EmitDefaultValue=false)]
+        public string Signature { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Data
+        /// </summary>
+        [DataMember(Name="data", EmitDefaultValue=false)]
+        public string Data { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -52,8 +68,10 @@ namespace Com.Madana.APIClient.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class JsonMDNCertificate {\n");
-            sb.Append("  Pem: ").Append(Pem).Append("\n");
+            sb.Append("class JsonSignedDataUtils {\n");
+            sb.Append("  Fingerpint: ").Append(Fingerpint).Append("\n");
+            sb.Append("  Signature: ").Append(Signature).Append("\n");
+            sb.Append("  Data: ").Append(Data).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -74,24 +92,34 @@ namespace Com.Madana.APIClient.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as JsonMDNCertificate);
+            return this.Equals(input as JsonSignedDataUtils);
         }
 
         /// <summary>
-        /// Returns true if JsonMDNCertificate instances are equal
+        /// Returns true if JsonSignedDataUtils instances are equal
         /// </summary>
-        /// <param name="input">Instance of JsonMDNCertificate to be compared</param>
+        /// <param name="input">Instance of JsonSignedDataUtils to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(JsonMDNCertificate input)
+        public bool Equals(JsonSignedDataUtils input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Pem == input.Pem ||
-                    (this.Pem != null &&
-                    this.Pem.Equals(input.Pem))
+                    this.Fingerpint == input.Fingerpint ||
+                    (this.Fingerpint != null &&
+                    this.Fingerpint.Equals(input.Fingerpint))
+                ) && 
+                (
+                    this.Signature == input.Signature ||
+                    (this.Signature != null &&
+                    this.Signature.Equals(input.Signature))
+                ) && 
+                (
+                    this.Data == input.Data ||
+                    (this.Data != null &&
+                    this.Data.Equals(input.Data))
                 );
         }
 
@@ -104,8 +132,12 @@ namespace Com.Madana.APIClient.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Pem != null)
-                    hashCode = hashCode * 59 + this.Pem.GetHashCode();
+                if (this.Fingerpint != null)
+                    hashCode = hashCode * 59 + this.Fingerpint.GetHashCode();
+                if (this.Signature != null)
+                    hashCode = hashCode * 59 + this.Signature.GetHashCode();
+                if (this.Data != null)
+                    hashCode = hashCode * 59 + this.Data.GetHashCode();
                 return hashCode;
             }
         }

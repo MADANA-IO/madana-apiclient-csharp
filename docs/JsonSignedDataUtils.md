@@ -1,14 +1,13 @@
 
-# Com.Madana.APIClient.Model.JsonDiskConfig
+# Com.Madana.APIClient.Model.JsonSignedDataUtils
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Roothash** | **string** |  | [optional] 
-**Disk** | **string** |  | [optional] 
-**RoothashOffset** | **int** |  | [optional] 
-**Readonly** | **bool** |  | [optional] 
+**Fingerpint** | **string** |  | [optional] 
+**Signature** | **string** |  | [optional] 
+**Data** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

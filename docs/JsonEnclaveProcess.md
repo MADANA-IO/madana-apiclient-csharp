@@ -5,23 +5,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**StartupTime** | **string** |  | [optional] 
+**RemoteControlServer** | **string** |  | [optional] 
+**EnclaveIdent** | **string** |  | [optional] 
+**InternalIdent** | **string** |  | [optional] 
+**StartupCMD** | **string** |  | [optional] 
 **SignerIdent** | **string** |  | [optional] 
-**EnclaveInputstream** | [**Object**](.md) |  | [optional] 
+**WireguardPublicKey** | **string** |  | [optional] 
+**Environment** | [**JsonEnvironment**](JsonEnvironment.md) |  | [optional] 
+**InternalRemoteControlServer** | **string** |  | [optional] 
+**Process** | [**JsonProcess**](JsonProcess.md) |  | [optional] 
+**AttestationServer** | **string** |  | [optional] 
+**InternalAttesationServer** | **string** |  | [optional] 
+**ConsoleOutput** | **string** |  | [optional] 
+**EndingTime** | **string** |  | [optional] 
 **Status** | **string** |  | [optional] 
 **WgInterface** | [**JsonWireguardInterface**](JsonWireguardInterface.md) |  | [optional] 
-**InternalIdent** | **string** |  | [optional] 
-**WireguardPublicKey** | **string** |  | [optional] 
-**ConsoleOutput** | **string** |  | [optional] 
-**StartupTime** | **string** |  | [optional] 
-**InternalRemoteControlServer** | **string** |  | [optional] 
-**RemoteControlServer** | **string** |  | [optional] 
-**InternalAttesationServer** | **string** |  | [optional] 
-**Environment** | [**JsonEnvironment**](JsonEnvironment.md) |  | [optional] 
-**Process** | [**JsonProcess**](JsonProcess.md) |  | [optional] 
-**EndingTime** | **string** |  | [optional] 
-**EnclaveIdent** | **string** |  | [optional] 
-**AttestationServer** | **string** |  | [optional] 
-**StartupCMD** | **string** |  | [optional] 
+**EnclaveInputstream** | [**Object**](.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
