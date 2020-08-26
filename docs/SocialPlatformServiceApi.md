@@ -71,8 +71,8 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: application/json
-- **Accept**: application/json, application/xml
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json
 
 ### HTTP response details
 | Status code | Description | Response headers |
