@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**DeleteObject_0**](UserServiceApi.md#deleteobject_0) | **DELETE** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
 [**GetAvatars**](UserServiceApi.md#getavatars) | **GET** /users/{username}/avatars | 
 [**GetCertificates**](UserServiceApi.md#getcertificates) | **GET** /users/{username}/certificates | 
+[**GetEnclaveHistory**](UserServiceApi.md#getenclavehistory) | **GET** /users/{username}/enclavehistory | 
 [**GetObject2**](UserServiceApi.md#getobject2) | **GET** /users/{username} | 
 [**SetAvatar**](UserServiceApi.md#setavatar) | **POST** /users/{username}/avatars | 
 [**SetSettings**](UserServiceApi.md#setsettings) | **POST** /users/{username}/settings | 
@@ -366,6 +367,82 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **username** | **string**|  | 
+
+### Return type
+
+**System.IO.Stream**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** |  |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetEnclaveHistory
+
+> System.IO.Stream GetEnclaveHistory (string username, string limit = null, string offset = null)
+
+
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
+
+namespace Example
+{
+    public class GetEnclaveHistoryExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "http://api.madana.io/rest";
+            var apiInstance = new UserServiceApi(Configuration.Default);
+            var username = username_example;  // string | 
+            var limit = limit_example;  // string |  (optional)  (default to "30")
+            var offset = offset_example;  // string |  (optional)  (default to "0")
+
+            try
+            {
+                System.IO.Stream result = apiInstance.GetEnclaveHistory(username, limit, offset);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserServiceApi.GetEnclaveHistory: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **username** | **string**|  | 
+ **limit** | **string**|  | [optional] [default to &quot;30&quot;]
+ **offset** | **string**|  | [optional] [default to &quot;0&quot;]
 
 ### Return type
 
