@@ -154,7 +154,7 @@ No authorization required
 
 ## GetRanking
 
-> System.IO.Stream GetRanking ()
+> System.IO.Stream GetRanking (string limit = null, string offset = null)
 
 Returns the Ranking by PTS within the System.
 
@@ -177,11 +177,13 @@ namespace Example
         {
             Configuration.Default.BasePath = "http://api.madana.io/rest";
             var apiInstance = new SocialServiceApi(Configuration.Default);
+            var limit = limit_example;  // string |  (optional)  (default to "99")
+            var offset = offset_example;  // string |  (optional)  (default to "0")
 
             try
             {
                 // Returns the Ranking by PTS within the System.
-                System.IO.Stream result = apiInstance.GetRanking();
+                System.IO.Stream result = apiInstance.GetRanking(limit, offset);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -197,7 +199,11 @@ namespace Example
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **string**|  | [optional] [default to &quot;99&quot;]
+ **offset** | **string**|  | [optional] [default to &quot;0&quot;]
 
 ### Return type
 

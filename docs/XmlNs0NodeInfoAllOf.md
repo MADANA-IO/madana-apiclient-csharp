@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **Owner** | **string** |  | [optional] 
 **Processors** | **List&lt;string&gt;** |  | [optional] 
 **PublicKey** | **string** |  | [optional] 
+**SgxInfo** | [**XmlNs0SGXInfo**](XmlNs0SGXInfo.md) |  | [optional] 
 **Status** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

@@ -5,6 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**EnclaveProcess** | [**XmlNs0EnclaveProcess**](XmlNs0EnclaveProcess.md) |  | [optional] 
+**NodeInfo** | [**XmlNs0NodeInfo**](XmlNs0NodeInfo.md) |  | [optional] 
 **Approved** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

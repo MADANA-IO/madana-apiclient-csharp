@@ -14,6 +14,10 @@ Name | Type | Description | Notes
 **InternalAttesationServer** | **string** |  | [optional] 
 **InternalIdent** | **string** |  | [optional] 
 **InternalRemoteControlServer** | **string** |  | [optional] 
+**InternalWireguardServer** | **string** |  | [optional] 
+**KubernetesEnclave** | [**XmlNs0KubernetesEnclave**](XmlNs0KubernetesEnclave.md) |  | [optional] 
+**PortMapping** | **Object** |  | [optional] 
+**Ports** | [**List&lt;XmlNs0EnclavePort&gt;**](XmlNs0EnclavePort.md) |  | [optional] 
 **Process** | [**XmlNs0Process**](XmlNs0Process.md) |  | [optional] 
 **PublicIdent** | **string** |  | [optional] 
 **RemoteControlServer** | **string** |  | [optional] 
@@ -23,6 +27,7 @@ Name | Type | Description | Notes
 **Status** | **string** |  | [optional] 
 **WgInterface** | [**XmlNs0WireguardInterface**](XmlNs0WireguardInterface.md) |  | [optional] 
 **WireguardPublicKey** | **string** |  | [optional] 
+**WireguardServer** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
