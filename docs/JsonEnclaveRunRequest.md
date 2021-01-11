@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**WireguardPublicKey** | **string** |  | [optional] 
-**Ports** | [**List&lt;JsonEnclavePort&gt;**](JsonEnclavePort.md) |  | [optional] 
-**EnclaveExecutionType** | **string** |  | [optional] 
 **EnvironmentUUID** | **string** |  | [optional] 
+**WireguardPublicKey** | **string** |  | [optional] 
+**EnclaveExecutionType** | **string** |  | [optional] 
+**Ports** | [**List&lt;JsonEnclavePort&gt;**](JsonEnclavePort.md) |  | [optional] 
 **UsingDefaultRunConfig** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
