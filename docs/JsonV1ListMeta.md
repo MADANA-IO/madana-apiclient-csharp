@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**SelfLink** | **string** |  | [optional] 
 **Continue** | **string** |  | [optional] 
 **ResourceVersion** | **string** |  | [optional] 
-**SelfLink** | **string** |  | [optional] 
 **RemainingItemCount** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
