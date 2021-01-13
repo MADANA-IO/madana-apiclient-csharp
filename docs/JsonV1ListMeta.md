@@ -6,9 +6,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **SelfLink** | **string** |  | [optional] 
-**RemainingItemCount** | **decimal** |  | [optional] 
 **ResourceVersion** | **string** |  | [optional] 
 **Continue** | **string** |  | [optional] 
+**RemainingItemCount** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
