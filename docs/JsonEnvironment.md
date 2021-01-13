@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Content** | **List&lt;string&gt;** |  | [optional] 
-**RootHashOffset** | **string** |  | [optional] 
-**Published** | **bool** |  | [optional] 
-**Packages** | **List&lt;string&gt;** |  | [optional] 
-**Description** | **string** |  | [optional] 
-**Uuid** | **string** |  | [optional] 
 **Roothash** | **string** |  | [optional] 
-**IpfsHash** | **string** |  | [optional] 
-**Name** | **string** |  | [optional] 
-**DefaultRunConfiguration** | [**JsonRunConfig**](JsonRunConfig.md) |  | [optional] 
 **Size** | **string** |  | [optional] 
+**Published** | **bool** |  | [optional] 
+**DefaultRunConfiguration** | [**JsonRunConfig**](JsonRunConfig.md) |  | [optional] 
+**IpfsHash** | **string** |  | [optional] 
+**RootHashOffset** | **string** |  | [optional] 
+**Uuid** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Packages** | **List&lt;string&gt;** |  | [optional] 
+**Content** | **List&lt;string&gt;** |  | [optional] 
+**Description** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

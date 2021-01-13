@@ -61,6 +61,7 @@ docs/OrganizationServiceApi.md
 docs/RequestServiceApi.md
 docs/SocialPlatformServiceApi.md
 docs/SocialServiceApi.md
+docs/SubscriptionServiceApi.md
 docs/SystemServiceApi.md
 docs/UserServiceApi.md
 docs/XmlNs0DiskConfig.md
@@ -112,6 +113,7 @@ src/Com.Madana.APIClient.Test/Api/OrganizationServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/RequestServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/SocialPlatformServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/SocialServiceApiTests.cs
+src/Com.Madana.APIClient.Test/Api/SubscriptionServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/SystemServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/UserServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Com.Madana.APIClient.Test.csproj
@@ -208,6 +210,7 @@ src/Com.Madana.APIClient/Api/OrganizationServiceApi.cs
 src/Com.Madana.APIClient/Api/RequestServiceApi.cs
 src/Com.Madana.APIClient/Api/SocialPlatformServiceApi.cs
 src/Com.Madana.APIClient/Api/SocialServiceApi.cs
+src/Com.Madana.APIClient/Api/SubscriptionServiceApi.cs
 src/Com.Madana.APIClient/Api/SystemServiceApi.cs
 src/Com.Madana.APIClient/Api/UserServiceApi.cs
 src/Com.Madana.APIClient/Client/ApiClient.cs

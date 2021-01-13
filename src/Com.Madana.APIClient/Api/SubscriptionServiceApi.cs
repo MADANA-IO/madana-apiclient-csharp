@@ -15,14 +15,13 @@ using System.Linq;
 using System.Threading;
 using RestSharp;
 using Com.Madana.APIClient.Client;
-using Com.Madana.APIClient.Model;
 
 namespace Com.Madana.APIClient.Api
 {
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface INodeServiceApi : IApiAccessor
+    public interface ISubscriptionServiceApi : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
@@ -33,7 +32,7 @@ namespace Com.Madana.APIClient.Api
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream GetBootstrap ();
+        System.IO.Stream AddFreeSubscription ();
 
         /// <summary>
         /// 
@@ -43,7 +42,7 @@ namespace Com.Madana.APIClient.Api
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> GetBootstrapWithHttpInfo ();
+        ApiResponse<System.IO.Stream> AddFreeSubscriptionWithHttpInfo ();
         /// <summary>
         /// 
         /// </summary>
@@ -51,9 +50,8 @@ namespace Com.Madana.APIClient.Api
         /// 
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="owner"> (optional)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream GetNodes2 (string owner = default(string));
+        System.IO.Stream GetApplication ();
 
         /// <summary>
         /// 
@@ -62,30 +60,8 @@ namespace Com.Madana.APIClient.Api
         /// 
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="owner"> (optional)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> GetNodes2WithHttpInfo (string owner = default(string));
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"> (optional)</param>
-        /// <returns>System.IO.Stream</returns>
-        System.IO.Stream PostNodeInfo (JsonNodeInfo body = default(JsonNodeInfo));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> PostNodeInfoWithHttpInfo (JsonNodeInfo body = default(JsonNodeInfo));
+        ApiResponse<System.IO.Stream> GetApplicationWithHttpInfo ();
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -97,7 +73,7 @@ namespace Com.Madana.APIClient.Api
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> GetBootstrapAsync (CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<System.IO.Stream> AddFreeSubscriptionAsync (CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// 
@@ -108,7 +84,7 @@ namespace Com.Madana.APIClient.Api
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetBootstrapWithHttpInfoAsync (CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> AddFreeSubscriptionWithHttpInfoAsync (CancellationToken cancellationToken = default(CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -116,10 +92,9 @@ namespace Com.Madana.APIClient.Api
         /// 
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="owner"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> GetNodes2Async (string owner = default(string), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<System.IO.Stream> GetApplicationAsync (CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// 
@@ -128,48 +103,24 @@ namespace Com.Madana.APIClient.Api
         /// 
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="owner"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetNodes2WithHttpInfoAsync (string owner = default(string), CancellationToken cancellationToken = default(CancellationToken));
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> PostNodeInfoAsync (JsonNodeInfo body = default(JsonNodeInfo), CancellationToken cancellationToken = default(CancellationToken));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> PostNodeInfoWithHttpInfoAsync (JsonNodeInfo body = default(JsonNodeInfo), CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetApplicationWithHttpInfoAsync (CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class NodeServiceApi : INodeServiceApi
+    public partial class SubscriptionServiceApi : ISubscriptionServiceApi
     {
         private Com.Madana.APIClient.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NodeServiceApi"/> class.
+        /// Initializes a new instance of the <see cref="SubscriptionServiceApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public NodeServiceApi(String basePath)
+        public SubscriptionServiceApi(String basePath)
         {
             this.Configuration = new Com.Madana.APIClient.Client.Configuration { BasePath = basePath };
 
@@ -177,10 +128,10 @@ namespace Com.Madana.APIClient.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NodeServiceApi"/> class
+        /// Initializes a new instance of the <see cref="SubscriptionServiceApi"/> class
         /// </summary>
         /// <returns></returns>
-        public NodeServiceApi()
+        public SubscriptionServiceApi()
         {
             this.Configuration = Com.Madana.APIClient.Client.Configuration.Default;
 
@@ -188,12 +139,12 @@ namespace Com.Madana.APIClient.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NodeServiceApi"/> class
+        /// Initializes a new instance of the <see cref="SubscriptionServiceApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public NodeServiceApi(Com.Madana.APIClient.Client.Configuration configuration = null)
+        public SubscriptionServiceApi(Com.Madana.APIClient.Client.Configuration configuration = null)
         {
             if (configuration == null) // use the default one in Configuration
                 this.Configuration = Com.Madana.APIClient.Client.Configuration.Default;
@@ -271,9 +222,9 @@ namespace Com.Madana.APIClient.Api
         /// </summary>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream GetBootstrap ()
+        public System.IO.Stream AddFreeSubscription ()
         {
-             ApiResponse<System.IO.Stream> localVarResponse = GetBootstrapWithHttpInfo();
+             ApiResponse<System.IO.Stream> localVarResponse = AddFreeSubscriptionWithHttpInfo();
              return localVarResponse.Data;
         }
 
@@ -282,10 +233,10 @@ namespace Com.Madana.APIClient.Api
         /// </summary>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse<System.IO.Stream> GetBootstrapWithHttpInfo ()
+        public ApiResponse<System.IO.Stream> AddFreeSubscriptionWithHttpInfo ()
         {
 
-            var localVarPath = "/nodes/bootstrap";
+            var localVarPath = "/subscriptions/free";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -306,270 +257,6 @@ namespace Com.Madana.APIClient.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetBootstrap", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> GetBootstrapAsync (CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<System.IO.Stream> localVarResponse = await GetBootstrapWithHttpInfoAsync(cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetBootstrapWithHttpInfoAsync (CancellationToken cancellationToken = default(CancellationToken))
-        {
-
-            var localVarPath = "/nodes/bootstrap";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetBootstrap", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="owner"> (optional)</param>
-        /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream GetNodes2 (string owner = default(string))
-        {
-             ApiResponse<System.IO.Stream> localVarResponse = GetNodes2WithHttpInfo(owner);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="owner"> (optional)</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse<System.IO.Stream> GetNodes2WithHttpInfo (string owner = default(string))
-        {
-
-            var localVarPath = "/nodes";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (owner != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "owner", owner)); // query parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetNodes2", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="owner"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> GetNodes2Async (string owner = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-             ApiResponse<System.IO.Stream> localVarResponse = await GetNodes2WithHttpInfoAsync(owner, cancellationToken);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="owner"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetNodes2WithHttpInfoAsync (string owner = default(string), CancellationToken cancellationToken = default(CancellationToken))
-        {
-
-            var localVarPath = "/nodes";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (owner != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "owner", owner)); // query parameter
-
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType, cancellationToken);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-
-            if (ExceptionFactory != null)
-            {
-                Exception exception = ExceptionFactory("GetNodes2", localVarResponse);
-                if (exception != null) throw exception;
-            }
-
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"> (optional)</param>
-        /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream PostNodeInfo (JsonNodeInfo body = default(JsonNodeInfo))
-        {
-             ApiResponse<System.IO.Stream> localVarResponse = PostNodeInfoWithHttpInfo(body);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"> (optional)</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse<System.IO.Stream> PostNodeInfoWithHttpInfo (JsonNodeInfo body = default(JsonNodeInfo))
-        {
-
-            var localVarPath = "/nodes";
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new List<KeyValuePair<String, String>>();
-            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json",
-                "application/xml"
-            };
-            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
 
 
             // make the HTTP request
@@ -581,7 +268,7 @@ namespace Com.Madana.APIClient.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("PostNodeInfo", localVarResponse);
+                Exception exception = ExceptionFactory("AddFreeSubscription", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -594,12 +281,11 @@ namespace Com.Madana.APIClient.Api
         ///  
         /// </summary>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> PostNodeInfoAsync (JsonNodeInfo body = default(JsonNodeInfo), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<System.IO.Stream> AddFreeSubscriptionAsync (CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await PostNodeInfoWithHttpInfoAsync(body, cancellationToken);
+             ApiResponse<System.IO.Stream> localVarResponse = await AddFreeSubscriptionWithHttpInfoAsync(cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -608,13 +294,12 @@ namespace Com.Madana.APIClient.Api
         ///  
         /// </summary>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> PostNodeInfoWithHttpInfoAsync (JsonNodeInfo body = default(JsonNodeInfo), CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> AddFreeSubscriptionWithHttpInfoAsync (CancellationToken cancellationToken = default(CancellationToken))
         {
 
-            var localVarPath = "/nodes";
+            var localVarPath = "/subscriptions/free";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -624,27 +309,17 @@ namespace Com.Madana.APIClient.Api
 
             // to determine the Content-Type header
             String[] localVarHttpContentTypes = new String[] {
-                "application/json"
             };
             String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json",
-                "application/xml"
+                "application/json"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (body != null && body.GetType() != typeof(byte[]))
-            {
-                localVarPostBody = this.Configuration.ApiClient.Serialize(body); // http body (model) parameter
-            }
-            else
-            {
-                localVarPostBody = body; // byte array
-            }
 
 
             // make the HTTP request
@@ -656,7 +331,130 @@ namespace Com.Madana.APIClient.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("PostNodeInfo", localVarResponse);
+                Exception exception = ExceptionFactory("AddFreeSubscription", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>System.IO.Stream</returns>
+        public System.IO.Stream GetApplication ()
+        {
+             ApiResponse<System.IO.Stream> localVarResponse = GetApplicationWithHttpInfo();
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of System.IO.Stream</returns>
+        public ApiResponse<System.IO.Stream> GetApplicationWithHttpInfo ()
+        {
+
+            var localVarPath = "/subscriptions/active";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) this.Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetApplication", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => string.Join(",", x.Value)),
+                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of System.IO.Stream</returns>
+        public async System.Threading.Tasks.Task<System.IO.Stream> GetApplicationAsync (CancellationToken cancellationToken = default(CancellationToken))
+        {
+             ApiResponse<System.IO.Stream> localVarResponse = await GetApplicationWithHttpInfoAsync(cancellationToken);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
+        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetApplicationWithHttpInfoAsync (CancellationToken cancellationToken = default(CancellationToken))
+        {
+
+            var localVarPath = "/subscriptions/active";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new List<KeyValuePair<String, String>>();
+            var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+            };
+            String localVarHttpContentType = this.Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await this.Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType, cancellationToken);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetApplication", localVarResponse);
                 if (exception != null) throw exception;
             }
 

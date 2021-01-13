@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** |  | [optional] 
-**Description** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
+**Description** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
 **Value** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
