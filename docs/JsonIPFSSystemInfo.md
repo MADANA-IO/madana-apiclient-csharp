@@ -6,10 +6,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | [optional] 
-**AgentVersion** | **string** |  | [optional] 
-**ProtocolVersion** | **string** |  | [optional] 
-**SwarmConnection** | **string** |  | [optional] 
 **PublicKey** | **string** |  | [optional] 
+**SwarmConnection** | **string** |  | [optional] 
+**ProtocolVersion** | **string** |  | [optional] 
+**AgentVersion** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

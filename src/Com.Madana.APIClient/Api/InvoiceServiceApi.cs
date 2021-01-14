@@ -21,7 +21,7 @@ namespace Com.Madana.APIClient.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IOrganizationServiceApi : IApiAccessor
+    public interface IInvoiceServiceApi : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
@@ -31,8 +31,9 @@ namespace Com.Madana.APIClient.Api
         /// 
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dayssince"> (optional, default to &quot;366&quot;)</param>
         /// <returns>System.IO.Stream</returns>
-        System.IO.Stream GetNodes3 ();
+        System.IO.Stream GetActiveSaaSSubscriptions (string dayssince = default(string));
 
         /// <summary>
         /// 
@@ -41,8 +42,9 @@ namespace Com.Madana.APIClient.Api
         /// 
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dayssince"> (optional, default to &quot;366&quot;)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> GetNodes3WithHttpInfo ();
+        ApiResponse<System.IO.Stream> GetActiveSaaSSubscriptionsWithHttpInfo (string dayssince = default(string));
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
@@ -52,9 +54,10 @@ namespace Com.Madana.APIClient.Api
         /// 
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dayssince"> (optional, default to &quot;366&quot;)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> GetNodes3Async (CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<System.IO.Stream> GetActiveSaaSSubscriptionsAsync (string dayssince = default(string), CancellationToken cancellationToken = default(CancellationToken));
 
         /// <summary>
         /// 
@@ -63,24 +66,25 @@ namespace Com.Madana.APIClient.Api
         /// 
         /// </remarks>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dayssince"> (optional, default to &quot;366&quot;)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetNodes3WithHttpInfoAsync (CancellationToken cancellationToken = default(CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetActiveSaaSSubscriptionsWithHttpInfoAsync (string dayssince = default(string), CancellationToken cancellationToken = default(CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class OrganizationServiceApi : IOrganizationServiceApi
+    public partial class InvoiceServiceApi : IInvoiceServiceApi
     {
         private Com.Madana.APIClient.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="OrganizationServiceApi"/> class.
+        /// Initializes a new instance of the <see cref="InvoiceServiceApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public OrganizationServiceApi(String basePath)
+        public InvoiceServiceApi(String basePath)
         {
             this.Configuration = new Com.Madana.APIClient.Client.Configuration { BasePath = basePath };
 
@@ -88,10 +92,10 @@ namespace Com.Madana.APIClient.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="OrganizationServiceApi"/> class
+        /// Initializes a new instance of the <see cref="InvoiceServiceApi"/> class
         /// </summary>
         /// <returns></returns>
-        public OrganizationServiceApi()
+        public InvoiceServiceApi()
         {
             this.Configuration = Com.Madana.APIClient.Client.Configuration.Default;
 
@@ -99,12 +103,12 @@ namespace Com.Madana.APIClient.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="OrganizationServiceApi"/> class
+        /// Initializes a new instance of the <see cref="InvoiceServiceApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public OrganizationServiceApi(Com.Madana.APIClient.Client.Configuration configuration = null)
+        public InvoiceServiceApi(Com.Madana.APIClient.Client.Configuration configuration = null)
         {
             if (configuration == null) // use the default one in Configuration
                 this.Configuration = Com.Madana.APIClient.Client.Configuration.Default;
@@ -181,10 +185,11 @@ namespace Com.Madana.APIClient.Api
         ///  
         /// </summary>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dayssince"> (optional, default to &quot;366&quot;)</param>
         /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream GetNodes3 ()
+        public System.IO.Stream GetActiveSaaSSubscriptions (string dayssince = default(string))
         {
-             ApiResponse<System.IO.Stream> localVarResponse = GetNodes3WithHttpInfo();
+             ApiResponse<System.IO.Stream> localVarResponse = GetActiveSaaSSubscriptionsWithHttpInfo(dayssince);
              return localVarResponse.Data;
         }
 
@@ -192,11 +197,12 @@ namespace Com.Madana.APIClient.Api
         ///  
         /// </summary>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dayssince"> (optional, default to &quot;366&quot;)</param>
         /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse<System.IO.Stream> GetNodes3WithHttpInfo ()
+        public ApiResponse<System.IO.Stream> GetActiveSaaSSubscriptionsWithHttpInfo (string dayssince = default(string))
         {
 
-            var localVarPath = "/organizations";
+            var localVarPath = "/invoices";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -217,6 +223,7 @@ namespace Com.Madana.APIClient.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (dayssince != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "dayssince", dayssince)); // query parameter
 
 
             // make the HTTP request
@@ -228,7 +235,7 @@ namespace Com.Madana.APIClient.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GetNodes3", localVarResponse);
+                Exception exception = ExceptionFactory("GetActiveSaaSSubscriptions", localVarResponse);
                 if (exception != null) throw exception;
             }
 
@@ -241,11 +248,12 @@ namespace Com.Madana.APIClient.Api
         ///  
         /// </summary>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dayssince"> (optional, default to &quot;366&quot;)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> GetNodes3Async (CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<System.IO.Stream> GetActiveSaaSSubscriptionsAsync (string dayssince = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await GetNodes3WithHttpInfoAsync(cancellationToken);
+             ApiResponse<System.IO.Stream> localVarResponse = await GetActiveSaaSSubscriptionsWithHttpInfoAsync(dayssince, cancellationToken);
              return localVarResponse.Data;
 
         }
@@ -254,12 +262,13 @@ namespace Com.Madana.APIClient.Api
         ///  
         /// </summary>
         /// <exception cref="Com.Madana.APIClient.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="dayssince"> (optional, default to &quot;366&quot;)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel request (optional) </param>
         /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetNodes3WithHttpInfoAsync (CancellationToken cancellationToken = default(CancellationToken))
+        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GetActiveSaaSSubscriptionsWithHttpInfoAsync (string dayssince = default(string), CancellationToken cancellationToken = default(CancellationToken))
         {
 
-            var localVarPath = "/organizations";
+            var localVarPath = "/invoices";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new List<KeyValuePair<String, String>>();
             var localVarHeaderParams = new Dictionary<String, String>(this.Configuration.DefaultHeader);
@@ -280,6 +289,7 @@ namespace Com.Madana.APIClient.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
+            if (dayssince != null) localVarQueryParams.AddRange(this.Configuration.ApiClient.ParameterToKeyValuePairs("", "dayssince", dayssince)); // query parameter
 
 
             // make the HTTP request
@@ -291,7 +301,7 @@ namespace Com.Madana.APIClient.Api
 
             if (ExceptionFactory != null)
             {
-                Exception exception = ExceptionFactory("GetNodes3", localVarResponse);
+                Exception exception = ExceptionFactory("GetActiveSaaSSubscriptions", localVarResponse);
                 if (exception != null) throw exception;
             }
 

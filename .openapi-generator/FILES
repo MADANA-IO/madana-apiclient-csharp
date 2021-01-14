@@ -11,6 +11,7 @@ docs/CertificateServiceApi.md
 docs/DataCollectionServiceApi.md
 docs/EnclaveServiceApi.md
 docs/EnvironmentServiceApi.md
+docs/InvoiceServiceApi.md
 docs/JsonDiskConfig.md
 docs/JsonEnclavePort.md
 docs/JsonEnclaveProcess.md
@@ -108,6 +109,7 @@ src/Com.Madana.APIClient.Test/Api/CertificateServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/DataCollectionServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/EnclaveServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/EnvironmentServiceApiTests.cs
+src/Com.Madana.APIClient.Test/Api/InvoiceServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/NodeServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/OrganizationServiceApiTests.cs
 src/Com.Madana.APIClient.Test/Api/RequestServiceApiTests.cs
@@ -205,6 +207,7 @@ src/Com.Madana.APIClient/Api/CertificateServiceApi.cs
 src/Com.Madana.APIClient/Api/DataCollectionServiceApi.cs
 src/Com.Madana.APIClient/Api/EnclaveServiceApi.cs
 src/Com.Madana.APIClient/Api/EnvironmentServiceApi.cs
+src/Com.Madana.APIClient/Api/InvoiceServiceApi.cs
 src/Com.Madana.APIClient/Api/NodeServiceApi.cs
 src/Com.Madana.APIClient/Api/OrganizationServiceApi.cs
 src/Com.Madana.APIClient/Api/RequestServiceApi.cs
