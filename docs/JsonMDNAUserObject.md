@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Activated** | **string** |  | [optional] 
+**LastActive** | **string** |  | [optional] 
 **UserName** | **string** |  | [optional] 
 **Image** | **string** |  | [optional] 
-**LastActive** | **string** |  | [optional] 
-**Activated** | **string** |  | [optional] 
 **Created** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

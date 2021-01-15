@@ -5,23 +5,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Processors** | **List&lt;string&gt;** |  | [optional] 
-**HardwareBaseboard** | **string** |  | [optional] 
-**CpuFamily** | **string** |  | [optional] 
-**Memory** | **string** |  | [optional] 
-**CpuFrequency** | **string** |  | [optional] 
-**PublicKey** | **string** |  | [optional] 
-**OperatingSystem** | **string** |  | [optional] 
-**ConnectionURL** | **string** |  | [optional] 
-**CpuLogicalCount** | **int** |  | [optional] 
-**OperatingSystemUptime** | **decimal** |  | [optional] 
-**Status** | **string** |  | [optional] 
-**CpuModel** | **string** |  | [optional] 
-**HardwareFirmware** | **string** |  | [optional] 
 **SgxInfo** | [**JsonSGXInfo**](JsonSGXInfo.md) |  | [optional] 
-**Owner** | **string** |  | [optional] 
 **IpfsInfo** | [**JsonIPFSSystemInfo**](JsonIPFSSystemInfo.md) |  | [optional] 
+**Memory** | **string** |  | [optional] 
+**Owner** | **string** |  | [optional] 
+**PublicKey** | **string** |  | [optional] 
+**ConnectionURL** | **string** |  | [optional] 
+**OperatingSystemUptime** | **decimal** |  | [optional] 
+**CpuModel** | **string** |  | [optional] 
+**CpuFamily** | **string** |  | [optional] 
+**Processors** | **List&lt;string&gt;** |  | [optional] 
+**CpuLogicalCount** | **int** |  | [optional] 
+**HardwareBaseboard** | **string** |  | [optional] 
+**HardwareFirmware** | **string** |  | [optional] 
 **CpuPhysicalCores** | **int** |  | [optional] 
+**OperatingSystem** | **string** |  | [optional] 
+**Status** | **string** |  | [optional] 
+**CpuFrequency** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

@@ -6,10 +6,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Ports** | [**List&lt;JsonEnclavePort&gt;**](JsonEnclavePort.md) |  | [optional] 
-**EnclaveExecutionType** | **string** |  | [optional] 
 **UsingDefaultRunConfig** | **bool** |  | [optional] 
 **WireguardPublicKey** | **string** |  | [optional] 
 **EnvironmentUUID** | **string** |  | [optional] 
+**EnclaveExecutionType** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
