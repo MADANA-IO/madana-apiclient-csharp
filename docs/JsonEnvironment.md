@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** |  | [optional] 
+**Published** | **bool** |  | [optional] 
 **Uuid** | **string** |  | [optional] 
 **DefaultRunConfiguration** | [**JsonRunConfig**](JsonRunConfig.md) |  | [optional] 
-**Roothash** | **string** |  | [optional] 
 **Size** | **string** |  | [optional] 
-**RootHashOffset** | **string** |  | [optional] 
-**Packages** | **List&lt;string&gt;** |  | [optional] 
 **Description** | **string** |  | [optional] 
+**Packages** | **List&lt;string&gt;** |  | [optional] 
 **Content** | **List&lt;string&gt;** |  | [optional] 
-**Published** | **bool** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Roothash** | **string** |  | [optional] 
 **IpfsHash** | **string** |  | [optional] 
+**RootHashOffset** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

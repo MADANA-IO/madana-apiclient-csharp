@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**InputStream** | **Object** |  | [optional] 
 **OutputStream** | **Object** |  | [optional] 
 **ErrorStream** | **Object** |  | [optional] 
+**InputStream** | **Object** |  | [optional] 
 **Alive** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
