@@ -6,9 +6,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **OutputStream** | **Object** |  | [optional] 
-**Alive** | **bool** |  | [optional] 
-**InputStream** | **Object** |  | [optional] 
 **ErrorStream** | **Object** |  | [optional] 
+**InputStream** | **Object** |  | [optional] 
+**Alive** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

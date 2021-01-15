@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Continue** | **string** |  | [optional] 
 **RemainingItemCount** | **decimal** |  | [optional] 
-**SelfLink** | **string** |  | [optional] 
 **ResourceVersion** | **string** |  | [optional] 
+**SelfLink** | **string** |  | [optional] 
+**Continue** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

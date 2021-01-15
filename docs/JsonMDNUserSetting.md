@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
 **Description** | **string** |  | [optional] 
 **Value** | **string** |  | [optional] 
 
