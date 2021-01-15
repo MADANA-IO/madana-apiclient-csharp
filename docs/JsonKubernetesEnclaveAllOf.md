@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EnclaveDeploymentEvents** | [**JsonV1EventList**](JsonV1EventList.md) |  | [optional] 
-**AttestationPort** | **int** |  | [optional] 
-**WireguardPort** | **int** |  | [optional] 
-**PodPhase** | **string** |  | [optional] 
+**RemoteControlIP** | **string** |  | [optional] 
 **EnclaveReplicaSetEvents** | [**JsonV1EventList**](JsonV1EventList.md) |  | [optional] 
+**EnclaveDeploymentEvents** | [**JsonV1EventList**](JsonV1EventList.md) |  | [optional] 
+**PodPhase** | **string** |  | [optional] 
 **DebugInfo** | **string** |  | [optional] 
+**WireguardPort** | **int** |  | [optional] 
 **EnclavePodEvents** | [**JsonV1EventList**](JsonV1EventList.md) |  | [optional] 
 **IsUsingInitContainer** | **bool** |  | [optional] 
-**RemoteControlIP** | **string** |  | [optional] 
+**AttestationPort** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

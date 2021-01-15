@@ -6,8 +6,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **RoothashOffset** | **int** |  | [optional] 
-**Readonly** | **bool** |  | [optional] 
 **Disk** | **string** |  | [optional] 
+**Readonly** | **bool** |  | [optional] 
 **Roothash** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**PublicKey** | **string** |  | [optional] 
 **SwarmConnection** | **string** |  | [optional] 
 **AgentVersion** | **string** |  | [optional] 
+**PublicKey** | **string** |  | [optional] 
 **ProtocolVersion** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
 
