@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**FieldPath** | **string** |  | [optional] 
 **Uid** | **string** |  | [optional] 
 **ApiVersion** | **string** |  | [optional] 
-**Namespace** | **string** |  | [optional] 
-**Name** | **string** |  | [optional] 
-**FieldPath** | **string** |  | [optional] 
 **ResourceVersion** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Namespace** | **string** |  | [optional] 
 **Kind** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
