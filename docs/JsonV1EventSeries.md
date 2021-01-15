@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**State** | **string** |  | [optional] 
 **LastObservedTime** | **decimal** |  | [optional] 
+**State** | **string** |  | [optional] 
 **Count** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

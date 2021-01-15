@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **SwarmConnection** | **string** |  | [optional] 
 **AgentVersion** | **string** |  | [optional] 
-**ProtocolVersion** | **string** |  | [optional] 
 **Id** | **string** |  | [optional] 
+**ProtocolVersion** | **string** |  | [optional] 
 **PublicKey** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

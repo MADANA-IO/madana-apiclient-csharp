@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Activated** | **string** |  | [optional] 
 **UserName** | **string** |  | [optional] 
-**LastActive** | **string** |  | [optional] 
-**Created** | **string** |  | [optional] 
 **Image** | **string** |  | [optional] 
-**Settings** | [**List&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
+**LastActive** | **string** |  | [optional] 
+**Activated** | **string** |  | [optional] 
+**Created** | **string** |  | [optional] 
 **SocialAccounts** | [**List&lt;JsonMDNSocialUserObject&gt;**](JsonMDNSocialUserObject.md) |  | [optional] 
 **Mail** | **string** |  | [optional] 
+**Settings** | [**List&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
 **Guid** | **string** |  | [optional] 
-**FirstName** | **string** |  | [optional] 
 **LastName** | **string** |  | [optional] 
+**FirstName** | **string** |  | [optional] 
 **Credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

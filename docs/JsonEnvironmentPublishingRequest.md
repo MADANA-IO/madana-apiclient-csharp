@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Uuid** | **string** |  | [optional] 
-**Description** | **string** |  | [optional] 
-**Size** | **string** |  | [optional] 
-**IpfsPrimaryPeer** | **string** |  | [optional] 
-**Name** | **string** |  | [optional] 
-**IsPublic** | **string** |  | [optional] 
 **IpfsHash** | **string** |  | [optional] 
-**Packages** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**IpfsPrimaryPeer** | **string** |  | [optional] 
 **Content** | **string** |  | [optional] 
+**Packages** | **string** |  | [optional] 
+**Description** | **string** |  | [optional] 
+**Uuid** | **string** |  | [optional] 
+**Size** | **string** |  | [optional] 
+**IsPublic** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
