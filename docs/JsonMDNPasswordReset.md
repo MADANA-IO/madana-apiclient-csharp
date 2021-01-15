@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Password** | **string** |  | [optional] 
 **Mail** | **string** |  | [optional] 
+**Password** | **string** |  | [optional] 
 **Token** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

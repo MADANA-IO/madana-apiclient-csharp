@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Ident** | **string** |  | [optional] 
 **Image** | **string** |  | [optional] 
+**Ident** | **string** |  | [optional] 
 **Platform** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
