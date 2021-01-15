@@ -5,13 +5,13 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ResourceVersion** | **string** |  | [optional] 
-**Kind** | **string** |  | [optional] 
-**Name** | **string** |  | [optional] 
-**Namespace** | **string** |  | [optional] 
 **FieldPath** | **string** |  | [optional] 
-**Uid** | **string** |  | [optional] 
+**Kind** | **string** |  | [optional] 
+**ResourceVersion** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
 **ApiVersion** | **string** |  | [optional] 
+**Uid** | **string** |  | [optional] 
+**Namespace** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

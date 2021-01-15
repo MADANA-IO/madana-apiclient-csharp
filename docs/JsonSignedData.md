@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Data** | **string** |  | [optional] 
 **Signature** | **string** |  | [optional] 
+**Data** | **string** |  | [optional] 
 **Fingerpint** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

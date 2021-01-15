@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Image** | **string** |  | [optional] 
-**Activated** | **string** |  | [optional] 
-**Created** | **string** |  | [optional] 
 **UserName** | **string** |  | [optional] 
 **LastActive** | **string** |  | [optional] 
-**FirstName** | **string** |  | [optional] 
-**SocialAccounts** | [**List&lt;JsonMDNSocialUserObject&gt;**](JsonMDNSocialUserObject.md) |  | [optional] 
-**LastName** | **string** |  | [optional] 
-**Credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
-**Settings** | [**List&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
+**Activated** | **string** |  | [optional] 
+**Image** | **string** |  | [optional] 
+**Created** | **string** |  | [optional] 
 **Mail** | **string** |  | [optional] 
+**Settings** | [**List&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
+**FirstName** | **string** |  | [optional] 
+**LastName** | **string** |  | [optional] 
+**SocialAccounts** | [**List&lt;JsonMDNSocialUserObject&gt;**](JsonMDNSocialUserObject.md) |  | [optional] 
+**Credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 **Guid** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
