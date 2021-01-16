@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Roothash** | **string** |  | [optional] 
-**Disk** | **string** |  | [optional] 
 **Readonly** | **bool** |  | [optional] 
+**Roothash** | **string** |  | [optional] 
 **RoothashOffset** | **int** |  | [optional] 
+**Disk** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**SwarmConnection** | **string** |  | [optional] 
 **ProtocolVersion** | **string** |  | [optional] 
 **PublicKey** | **string** |  | [optional] 
-**SwarmConnection** | **string** |  | [optional] 
-**Id** | **string** |  | [optional] 
 **AgentVersion** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

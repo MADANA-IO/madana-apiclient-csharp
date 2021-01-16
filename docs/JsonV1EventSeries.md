@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**LastObservedTime** | **decimal** |  | [optional] 
-**State** | **string** |  | [optional] 
 **Count** | **decimal** |  | [optional] 
+**State** | **string** |  | [optional] 
+**LastObservedTime** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
