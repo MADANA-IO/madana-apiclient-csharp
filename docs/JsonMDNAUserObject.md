@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Created** | **string** |  | [optional] 
 **LastActive** | **string** |  | [optional] 
 **Image** | **string** |  | [optional] 
-**Created** | **string** |  | [optional] 
 **UserName** | **string** |  | [optional] 
 **Activated** | **string** |  | [optional] 
 

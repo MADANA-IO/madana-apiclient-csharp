@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ApiVersion** | **string** |  | [optional] 
 **Items** | [**List&lt;JsonV1Event&gt;**](JsonV1Event.md) |  | [optional] 
 **Metadata** | [**JsonV1ListMeta**](JsonV1ListMeta.md) |  | [optional] 
+**ApiVersion** | **string** |  | [optional] 
 **Kind** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
