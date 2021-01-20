@@ -6,10 +6,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Operation** | **string** |  | [optional] 
-**FieldsV1** | **Object** |  | [optional] 
-**Time** | **decimal** |  | [optional] 
 **FieldsType** | **string** |  | [optional] 
 **ApiVersion** | **string** |  | [optional] 
+**FieldsV1** | **Object** |  | [optional] 
+**Time** | **decimal** |  | [optional] 
 **Manager** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
