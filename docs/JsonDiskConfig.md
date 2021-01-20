@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**RoothashOffset** | **int** |  | [optional] 
 **Disk** | **string** |  | [optional] 
+**RoothashOffset** | **int** |  | [optional] 
 **Roothash** | **string** |  | [optional] 
 **Readonly** | **bool** |  | [optional] 
 

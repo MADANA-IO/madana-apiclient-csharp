@@ -7,10 +7,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ApiVersion** | **string** |  | [optional] 
 **FieldsV1** | **Object** |  | [optional] 
+**Time** | **decimal** |  | [optional] 
+**Manager** | **string** |  | [optional] 
 **Operation** | **string** |  | [optional] 
 **FieldsType** | **string** |  | [optional] 
-**Manager** | **string** |  | [optional] 
-**Time** | **decimal** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
