@@ -4,6 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**CancelSubscription**](UserServiceApi.md#cancelsubscription) | **POST** /users/{username}/subscriptions/{planname}/cancel | 
 [**CreateObject**](UserServiceApi.md#createobject) | **POST** /users | Creates a new user object.
 [**DeleteObject**](UserServiceApi.md#deleteobject) | **DELETE** /users/{username} | Deletes an User based on the provided id and securitycontext.
 [**DeleteObject_0**](UserServiceApi.md#deleteobject_0) | **DELETE** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
@@ -15,6 +16,80 @@ Method | HTTP request | Description
 [**SetSettings**](UserServiceApi.md#setsettings) | **POST** /users/{username}/settings | 
 [**UpdateObject**](UserServiceApi.md#updateobject) | **PUT** /users/{username} | Updates Userproperties based on the provided user object.
 
+
+
+## CancelSubscription
+
+> System.IO.Stream CancelSubscription (string planname, string username)
+
+
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
+
+namespace Example
+{
+    public class CancelSubscriptionExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "http://api.madana.io/rest";
+            var apiInstance = new UserServiceApi(Configuration.Default);
+            var planname = planname_example;  // string | 
+            var username = username_example;  // string | 
+
+            try
+            {
+                System.IO.Stream result = apiInstance.CancelSubscription(planname, username);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling UserServiceApi.CancelSubscription: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **planname** | **string**|  | 
+ **username** | **string**|  | 
+
+### Return type
+
+**System.IO.Stream**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **201** |  |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
 
 
 ## CreateObject
