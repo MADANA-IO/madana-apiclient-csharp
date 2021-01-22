@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EnclaveExecutionType** | **string** |  | [optional] 
-**EnvironmentUUID** | **string** |  | [optional] 
 **UsingDefaultRunConfig** | **bool** |  | [optional] 
-**Ports** | [**List&lt;JsonEnclavePort&gt;**](JsonEnclavePort.md) |  | [optional] 
+**EnvironmentUUID** | **string** |  | [optional] 
 **WireguardPublicKey** | **string** |  | [optional] 
+**Ports** | [**List&lt;JsonEnclavePort&gt;**](JsonEnclavePort.md) |  | [optional] 
+**EnclaveExecutionType** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
