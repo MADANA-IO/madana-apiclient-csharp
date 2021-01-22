@@ -5,18 +5,18 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**UserName** | **string** |  | [optional] 
-**Activated** | **string** |  | [optional] 
 **Image** | **string** |  | [optional] 
-**Created** | **string** |  | [optional] 
 **LastActive** | **string** |  | [optional] 
+**Activated** | **string** |  | [optional] 
+**UserName** | **string** |  | [optional] 
+**Created** | **string** |  | [optional] 
+**Credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 **SocialAccounts** | [**List&lt;JsonMDNSocialUserObject&gt;**](JsonMDNSocialUserObject.md) |  | [optional] 
 **Mail** | **string** |  | [optional] 
-**LastName** | **string** |  | [optional] 
 **Settings** | [**List&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
-**Credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
-**Guid** | **string** |  | [optional] 
+**LastName** | **string** |  | [optional] 
 **FirstName** | **string** |  | [optional] 
+**Guid** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
