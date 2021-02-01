@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**EnclaveExecutionType** | **string** |  | [optional] 
 **WireguardPublicKey** | **string** |  | [optional] 
 **UsingDefaultRunConfig** | **bool** |  | [optional] 
+**EnclaveExecutionType** | **string** |  | [optional] 
 **Ports** | [**List&lt;JsonEnclavePort&gt;**](JsonEnclavePort.md) |  | [optional] 
 **EnvironmentUUID** | **string** |  | [optional] 
 

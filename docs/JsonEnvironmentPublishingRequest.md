@@ -6,14 +6,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Content** | **string** |  | [optional] 
-**Name** | **string** |  | [optional] 
+**Description** | **string** |  | [optional] 
+**Size** | **string** |  | [optional] 
+**Uuid** | **string** |  | [optional] 
 **IpfsHash** | **string** |  | [optional] 
 **IsPublic** | **string** |  | [optional] 
-**Description** | **string** |  | [optional] 
-**Packages** | **string** |  | [optional] 
-**Uuid** | **string** |  | [optional] 
 **IpfsPrimaryPeer** | **string** |  | [optional] 
-**Size** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Packages** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

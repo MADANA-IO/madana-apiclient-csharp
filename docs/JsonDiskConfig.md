@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**RoothashOffset** | **int** |  | [optional] 
-**Disk** | **string** |  | [optional] 
 **Roothash** | **string** |  | [optional] 
+**Disk** | **string** |  | [optional] 
+**RoothashOffset** | **int** |  | [optional] 
 **Readonly** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

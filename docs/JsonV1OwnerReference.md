@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **string** |  | [optional] 
 **Controller** | **bool** |  | [optional] 
-**BlockOwnerDeletion** | **bool** |  | [optional] 
-**Uid** | **string** |  | [optional] 
 **Kind** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Uid** | **string** |  | [optional] 
+**BlockOwnerDeletion** | **bool** |  | [optional] 
 **ApiVersion** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
