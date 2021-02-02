@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Args** | **List&lt;string&gt;** |  | [optional] 
-**Run** | **string** |  | [optional] 
 **Environment** | **Dictionary&lt;string, string&gt;** |  | [optional] 
+**Run** | **string** |  | [optional] 
+**Args** | **List&lt;string&gt;** |  | [optional] 
 **DiskConfig** | [**List&lt;JsonDiskConfig&gt;**](JsonDiskConfig.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
