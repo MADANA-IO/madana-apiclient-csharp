@@ -5,21 +5,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ResourceVersion** | **string** |  | [optional] 
-**GenerateName** | **string** |  | [optional] 
-**Uid** | **string** |  | [optional] 
-**Annotations** | **Dictionary&lt;string, string&gt;** |  | [optional] 
 **SelfLink** | **string** |  | [optional] 
-**CreationTimestamp** | **decimal** |  | [optional] 
-**ManagedFields** | [**List&lt;JsonV1ManagedFieldsEntry&gt;**](JsonV1ManagedFieldsEntry.md) |  | [optional] 
 **Finalizers** | **List&lt;string&gt;** |  | [optional] 
-**Name** | **string** |  | [optional] 
-**DeletionTimestamp** | **decimal** |  | [optional] 
 **DeletionGracePeriodSeconds** | **decimal** |  | [optional] 
-**Labels** | **Dictionary&lt;string, string&gt;** |  | [optional] 
-**Namespace** | **string** |  | [optional] 
+**CreationTimestamp** | **decimal** |  | [optional] 
+**ResourceVersion** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**GenerateName** | **string** |  | [optional] 
 **ClusterName** | **string** |  | [optional] 
 **Generation** | **decimal** |  | [optional] 
+**Uid** | **string** |  | [optional] 
+**Annotations** | **Dictionary&lt;string, string&gt;** |  | [optional] 
+**ManagedFields** | [**List&lt;JsonV1ManagedFieldsEntry&gt;**](JsonV1ManagedFieldsEntry.md) |  | [optional] 
+**Labels** | **Dictionary&lt;string, string&gt;** |  | [optional] 
+**Namespace** | **string** |  | [optional] 
+**DeletionTimestamp** | **decimal** |  | [optional] 
 **OwnerReferences** | [**List&lt;JsonV1OwnerReference&gt;**](JsonV1OwnerReference.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

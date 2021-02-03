@@ -6,13 +6,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **IsPublic** | **string** |  | [optional] 
-**IpfsHash** | **string** |  | [optional] 
-**IpfsPrimaryPeer** | **string** |  | [optional] 
 **Packages** | **string** |  | [optional] 
-**Content** | **string** |  | [optional] 
-**Description** | **string** |  | [optional] 
-**Uuid** | **string** |  | [optional] 
 **Size** | **string** |  | [optional] 
+**Uuid** | **string** |  | [optional] 
+**IpfsPrimaryPeer** | **string** |  | [optional] 
+**Content** | **string** |  | [optional] 
+**IpfsHash** | **string** |  | [optional] 
+**Description** | **string** |  | [optional] 
 **Name** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

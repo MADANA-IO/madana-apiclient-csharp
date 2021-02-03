@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**FieldsType** | **string** |  | [optional] 
-**Manager** | **string** |  | [optional] 
 **ApiVersion** | **string** |  | [optional] 
+**Operation** | **string** |  | [optional] 
+**FieldsType** | **string** |  | [optional] 
 **Time** | **decimal** |  | [optional] 
 **FieldsV1** | **Object** |  | [optional] 
-**Operation** | **string** |  | [optional] 
+**Manager** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
