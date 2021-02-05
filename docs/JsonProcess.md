@@ -6,8 +6,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ErrorStream** | **Object** |  | [optional] 
-**Alive** | **bool** |  | [optional] 
 **OutputStream** | **Object** |  | [optional] 
+**Alive** | **bool** |  | [optional] 
 **InputStream** | **Object** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

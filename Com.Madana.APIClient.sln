@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Madana.APIClient", "src\Com.Madana.APIClient\Com.Madana.APIClient.csproj", "{F567B74B-906D-4442-B0C9-183DE0AF0548}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Madana.APIClient", "src\Com.Madana.APIClient\Com.Madana.APIClient.csproj", "{84DFBA2F-D722-403C-91CD-1E7F78D8536F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Madana.APIClient.Test", "src\Com.Madana.APIClient.Test\Com.Madana.APIClient.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F567B74B-906D-4442-B0C9-183DE0AF0548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F567B74B-906D-4442-B0C9-183DE0AF0548}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F567B74B-906D-4442-B0C9-183DE0AF0548}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F567B74B-906D-4442-B0C9-183DE0AF0548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84DFBA2F-D722-403C-91CD-1E7F78D8536F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84DFBA2F-D722-403C-91CD-1E7F78D8536F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84DFBA2F-D722-403C-91CD-1E7F78D8536F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84DFBA2F-D722-403C-91CD-1E7F78D8536F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
