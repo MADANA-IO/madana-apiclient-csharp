@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**LastName** | **string** |  | [optional] 
-**FirstName** | **string** |  | [optional] 
-**Guid** | **string** |  | [optional] 
 **Settings** | [**List&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
 **SocialAccounts** | [**List&lt;JsonMDNSocialUserObject&gt;**](JsonMDNSocialUserObject.md) |  | [optional] 
+**FirstName** | **string** |  | [optional] 
+**LastName** | **string** |  | [optional] 
+**Guid** | **string** |  | [optional] 
 **Mail** | **string** |  | [optional] 
 **Credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 

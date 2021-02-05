@@ -5,23 +5,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Type** | **string** |  | [optional] 
 **Reason** | **string** |  | [optional] 
-**Metadata** | [**JsonV1ObjectMeta**](JsonV1ObjectMeta.md) |  | [optional] 
-**ReportingInstance** | **string** |  | [optional] 
-**ApiVersion** | **string** |  | [optional] 
+**Type** | **string** |  | [optional] 
+**ReportingComponent** | **string** |  | [optional] 
 **FirstTimestamp** | **decimal** |  | [optional] 
 **Kind** | **string** |  | [optional] 
-**Series** | [**JsonV1EventSeries**](JsonV1EventSeries.md) |  | [optional] 
-**Message** | **string** |  | [optional] 
-**Count** | **decimal** |  | [optional] 
-**Related** | [**JsonV1ObjectReference**](JsonV1ObjectReference.md) |  | [optional] 
-**LastTimestamp** | **decimal** |  | [optional] 
 **InvolvedObject** | [**JsonV1ObjectReference**](JsonV1ObjectReference.md) |  | [optional] 
-**Source** | [**JsonV1EventSource**](JsonV1EventSource.md) |  | [optional] 
+**ApiVersion** | **string** |  | [optional] 
+**Series** | [**JsonV1EventSeries**](JsonV1EventSeries.md) |  | [optional] 
+**LastTimestamp** | **decimal** |  | [optional] 
+**Count** | **decimal** |  | [optional] 
+**Message** | **string** |  | [optional] 
+**Metadata** | [**JsonV1ObjectMeta**](JsonV1ObjectMeta.md) |  | [optional] 
 **Action** | **string** |  | [optional] 
+**Related** | [**JsonV1ObjectReference**](JsonV1ObjectReference.md) |  | [optional] 
+**Source** | [**JsonV1EventSource**](JsonV1EventSource.md) |  | [optional] 
 **EventTime** | **decimal** |  | [optional] 
-**ReportingComponent** | **string** |  | [optional] 
+**ReportingInstance** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

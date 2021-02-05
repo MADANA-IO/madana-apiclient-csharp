@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Kind** | **string** |  | [optional] 
 **Items** | [**List&lt;JsonV1Event&gt;**](JsonV1Event.md) |  | [optional] 
+**Kind** | **string** |  | [optional] 
 **Metadata** | [**JsonV1ListMeta**](JsonV1ListMeta.md) |  | [optional] 
 **ApiVersion** | **string** |  | [optional] 
 

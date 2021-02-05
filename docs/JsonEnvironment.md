@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Published** | **bool** |  | [optional] 
 **Size** | **string** |  | [optional] 
-**Packages** | **List&lt;string&gt;** |  | [optional] 
-**Uuid** | **string** |  | [optional] 
 **RootHashOffset** | **string** |  | [optional] 
-**IpfsHash** | **string** |  | [optional] 
+**Packages** | **List&lt;string&gt;** |  | [optional] 
+**Published** | **bool** |  | [optional] 
 **Roothash** | **string** |  | [optional] 
-**Description** | **string** |  | [optional] 
 **Content** | **List&lt;string&gt;** |  | [optional] 
+**IpfsHash** | **string** |  | [optional] 
+**Uuid** | **string** |  | [optional] 
+**Description** | **string** |  | [optional] 
 **DefaultRunConfiguration** | [**JsonRunConfig**](JsonRunConfig.md) |  | [optional] 
 **Name** | **string** |  | [optional] 
 

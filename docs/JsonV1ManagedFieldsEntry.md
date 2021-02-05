@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**FieldsV1** | **Object** |  | [optional] 
+**Time** | **decimal** |  | [optional] 
 **ApiVersion** | **string** |  | [optional] 
 **Operation** | **string** |  | [optional] 
 **FieldsType** | **string** |  | [optional] 
-**Time** | **decimal** |  | [optional] 
-**FieldsV1** | **Object** |  | [optional] 
 **Manager** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

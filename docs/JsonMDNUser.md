@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Activated** | **string** |  | [optional] 
 **Image** | **string** |  | [optional] 
-**LastActive** | **string** |  | [optional] 
 **Created** | **string** |  | [optional] 
+**Activated** | **string** |  | [optional] 
 **UserName** | **string** |  | [optional] 
-**LastName** | **string** |  | [optional] 
-**FirstName** | **string** |  | [optional] 
-**Guid** | **string** |  | [optional] 
+**LastActive** | **string** |  | [optional] 
 **Settings** | [**List&lt;JsonMDNUserSetting&gt;**](JsonMDNUserSetting.md) |  | [optional] 
 **SocialAccounts** | [**List&lt;JsonMDNSocialUserObject&gt;**](JsonMDNSocialUserObject.md) |  | [optional] 
+**FirstName** | **string** |  | [optional] 
+**LastName** | **string** |  | [optional] 
+**Guid** | **string** |  | [optional] 
 **Mail** | **string** |  | [optional] 
 **Credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 

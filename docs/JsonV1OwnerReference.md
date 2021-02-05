@@ -6,11 +6,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** |  | [optional] 
-**ApiVersion** | **string** |  | [optional] 
-**BlockOwnerDeletion** | **bool** |  | [optional] 
-**Uid** | **string** |  | [optional] 
 **Controller** | **bool** |  | [optional] 
 **Kind** | **string** |  | [optional] 
+**ApiVersion** | **string** |  | [optional] 
+**Uid** | **string** |  | [optional] 
+**BlockOwnerDeletion** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
