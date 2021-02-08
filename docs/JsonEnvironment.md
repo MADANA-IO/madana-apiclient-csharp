@@ -5,16 +5,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**IpfsHash** | **string** |  | [optional] 
-**RootHashOffset** | **string** |  | [optional] 
-**Name** | **string** |  | [optional] 
-**Description** | **string** |  | [optional] 
 **Content** | **List&lt;string&gt;** |  | [optional] 
-**Roothash** | **string** |  | [optional] 
 **Uuid** | **string** |  | [optional] 
+**Roothash** | **string** |  | [optional] 
+**RootHashOffset** | **string** |  | [optional] 
 **DefaultRunConfiguration** | [**JsonRunConfig**](JsonRunConfig.md) |  | [optional] 
-**Packages** | **List&lt;string&gt;** |  | [optional] 
+**IpfsHash** | **string** |  | [optional] 
+**Description** | **string** |  | [optional] 
 **Published** | **bool** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Packages** | **List&lt;string&gt;** |  | [optional] 
 **Size** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

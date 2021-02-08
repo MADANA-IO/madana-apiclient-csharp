@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**UsingDefaultRunConfig** | **bool** |  | [optional] 
-**Ports** | [**List&lt;JsonEnclavePort&gt;**](JsonEnclavePort.md) |  | [optional] 
-**EnclaveExecutionType** | **string** |  | [optional] 
 **WireguardPublicKey** | **string** |  | [optional] 
+**Ports** | [**List&lt;JsonEnclavePort&gt;**](JsonEnclavePort.md) |  | [optional] 
+**UsingDefaultRunConfig** | **bool** |  | [optional] 
+**EnclaveExecutionType** | **string** |  | [optional] 
 **EnvironmentUUID** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
