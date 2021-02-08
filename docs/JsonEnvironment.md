@@ -6,16 +6,16 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Content** | **List&lt;string&gt;** |  | [optional] 
-**Uuid** | **string** |  | [optional] 
-**Roothash** | **string** |  | [optional] 
-**RootHashOffset** | **string** |  | [optional] 
-**DefaultRunConfiguration** | [**JsonRunConfig**](JsonRunConfig.md) |  | [optional] 
-**IpfsHash** | **string** |  | [optional] 
-**Description** | **string** |  | [optional] 
-**Published** | **bool** |  | [optional] 
 **Name** | **string** |  | [optional] 
-**Packages** | **List&lt;string&gt;** |  | [optional] 
+**Uuid** | **string** |  | [optional] 
+**IpfsHash** | **string** |  | [optional] 
+**DefaultRunConfiguration** | [**JsonRunConfig**](JsonRunConfig.md) |  | [optional] 
+**Published** | **bool** |  | [optional] 
+**Description** | **string** |  | [optional] 
+**RootHashOffset** | **string** |  | [optional] 
 **Size** | **string** |  | [optional] 
+**Packages** | **List&lt;string&gt;** |  | [optional] 
+**Roothash** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

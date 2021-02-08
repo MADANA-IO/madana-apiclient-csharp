@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**GetBootstrap**](NodeServiceApi.md#getbootstrap) | **GET** /nodes/bootstrap | 
 [**GetNodes2**](NodeServiceApi.md#getnodes2) | **GET** /nodes | 
 [**PostNodeInfo**](NodeServiceApi.md#postnodeinfo) | **POST** /nodes | 
+[**PostNodeInfo_0**](NodeServiceApi.md#postnodeinfo_0) | **POST** /nodes/create | 
 
 
 
@@ -197,6 +198,78 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**JsonNodeInfo**](JsonNodeInfo.md)|  | [optional] 
+
+### Return type
+
+**System.IO.Stream**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json, application/xml
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **201** |  |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## PostNodeInfo_0
+
+> System.IO.Stream PostNodeInfo_0 (JsonNodeRunRequest body = null)
+
+
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
+
+namespace Example
+{
+    public class PostNodeInfo_0Example
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "http://api.madana.io/rest";
+            var apiInstance = new NodeServiceApi(Configuration.Default);
+            var body = new JsonNodeRunRequest(); // JsonNodeRunRequest |  (optional) 
+
+            try
+            {
+                System.IO.Stream result = apiInstance.PostNodeInfo_0(body);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling NodeServiceApi.PostNodeInfo_0: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**JsonNodeRunRequest**](JsonNodeRunRequest.md)|  | [optional] 
 
 ### Return type
 

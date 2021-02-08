@@ -25,25 +25,33 @@ using OpenAPIDateConverter = Com.Madana.APIClient.Client.OpenAPIDateConverter;
 namespace Com.Madana.APIClient.Model
 {
     /// <summary>
-    /// XmlNs0KubernetesEnclaveAllOf
+    /// JsonNodeRunRequest
     /// </summary>
     [DataContract]
-    public partial class XmlNs0KubernetesEnclaveAllOf :  IEquatable<XmlNs0KubernetesEnclaveAllOf>, IValidatableObject
+    public partial class JsonNodeRunRequest :  IEquatable<JsonNodeRunRequest>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="XmlNs0KubernetesEnclaveAllOf" /> class.
+        /// Initializes a new instance of the <see cref="JsonNodeRunRequest" /> class.
         /// </summary>
-        /// <param name="isUsingInitContainer">isUsingInitContainer.</param>
-        public XmlNs0KubernetesEnclaveAllOf(bool isUsingInitContainer = default(bool))
+        /// <param name="cpuCount">cpuCount.</param>
+        /// <param name="subdomain">subdomain.</param>
+        public JsonNodeRunRequest(string cpuCount = default(string), string subdomain = default(string))
         {
-            this.IsUsingInitContainer = isUsingInitContainer;
+            this.CpuCount = cpuCount;
+            this.Subdomain = subdomain;
         }
         
         /// <summary>
-        /// Gets or Sets IsUsingInitContainer
+        /// Gets or Sets CpuCount
         /// </summary>
-        [DataMember(Name="isUsingInitContainer", EmitDefaultValue=false)]
-        public bool IsUsingInitContainer { get; set; }
+        [DataMember(Name="cpuCount", EmitDefaultValue=false)]
+        public string CpuCount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Subdomain
+        /// </summary>
+        [DataMember(Name="subdomain", EmitDefaultValue=false)]
+        public string Subdomain { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -52,8 +60,9 @@ namespace Com.Madana.APIClient.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class XmlNs0KubernetesEnclaveAllOf {\n");
-            sb.Append("  IsUsingInitContainer: ").Append(IsUsingInitContainer).Append("\n");
+            sb.Append("class JsonNodeRunRequest {\n");
+            sb.Append("  CpuCount: ").Append(CpuCount).Append("\n");
+            sb.Append("  Subdomain: ").Append(Subdomain).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -74,24 +83,29 @@ namespace Com.Madana.APIClient.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as XmlNs0KubernetesEnclaveAllOf);
+            return this.Equals(input as JsonNodeRunRequest);
         }
 
         /// <summary>
-        /// Returns true if XmlNs0KubernetesEnclaveAllOf instances are equal
+        /// Returns true if JsonNodeRunRequest instances are equal
         /// </summary>
-        /// <param name="input">Instance of XmlNs0KubernetesEnclaveAllOf to be compared</param>
+        /// <param name="input">Instance of JsonNodeRunRequest to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(XmlNs0KubernetesEnclaveAllOf input)
+        public bool Equals(JsonNodeRunRequest input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.IsUsingInitContainer == input.IsUsingInitContainer ||
-                    (this.IsUsingInitContainer != null &&
-                    this.IsUsingInitContainer.Equals(input.IsUsingInitContainer))
+                    this.CpuCount == input.CpuCount ||
+                    (this.CpuCount != null &&
+                    this.CpuCount.Equals(input.CpuCount))
+                ) && 
+                (
+                    this.Subdomain == input.Subdomain ||
+                    (this.Subdomain != null &&
+                    this.Subdomain.Equals(input.Subdomain))
                 );
         }
 
@@ -104,8 +118,10 @@ namespace Com.Madana.APIClient.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.IsUsingInitContainer != null)
-                    hashCode = hashCode * 59 + this.IsUsingInitContainer.GetHashCode();
+                if (this.CpuCount != null)
+                    hashCode = hashCode * 59 + this.CpuCount.GetHashCode();
+                if (this.Subdomain != null)
+                    hashCode = hashCode * 59 + this.Subdomain.GetHashCode();
                 return hashCode;
             }
         }

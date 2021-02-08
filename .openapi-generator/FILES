@@ -41,6 +41,7 @@ docs/JsonMDNUserSetting.md
 docs/JsonMDNUserSettingAllOf.md
 docs/JsonNetworkInterface.md
 docs/JsonNodeInfo.md
+docs/JsonNodeRunRequest.md
 docs/JsonProcess.md
 docs/JsonRunConfig.md
 docs/JsonSGXInfo.md
@@ -148,6 +149,7 @@ src/Com.Madana.APIClient.Test/Model/JsonMDNUserSettingTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonMDNUserTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonNetworkInterfaceTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonNodeInfoTests.cs
+src/Com.Madana.APIClient.Test/Model/JsonNodeRunRequestTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonProcessTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonRunConfigTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonSGXInfoTests.cs
@@ -256,6 +258,7 @@ src/Com.Madana.APIClient/Model/JsonMDNUserSetting.cs
 src/Com.Madana.APIClient/Model/JsonMDNUserSettingAllOf.cs
 src/Com.Madana.APIClient/Model/JsonNetworkInterface.cs
 src/Com.Madana.APIClient/Model/JsonNodeInfo.cs
+src/Com.Madana.APIClient/Model/JsonNodeRunRequest.cs
 src/Com.Madana.APIClient/Model/JsonProcess.cs
 src/Com.Madana.APIClient/Model/JsonRunConfig.cs
 src/Com.Madana.APIClient/Model/JsonSGXInfo.cs
