@@ -46,7 +46,6 @@ docs/JsonProcess.md
 docs/JsonRunConfig.md
 docs/JsonSGXInfo.md
 docs/JsonSignedData.md
-docs/JsonSignedDataUtils.md
 docs/JsonV1Event.md
 docs/JsonV1EventList.md
 docs/JsonV1EventSeries.md
@@ -154,7 +153,6 @@ src/Com.Madana.APIClient.Test/Model/JsonProcessTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonRunConfigTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonSGXInfoTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonSignedDataTests.cs
-src/Com.Madana.APIClient.Test/Model/JsonSignedDataUtilsTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonV1EventListTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonV1EventSeriesTests.cs
 src/Com.Madana.APIClient.Test/Model/JsonV1EventSourceTests.cs
@@ -263,7 +261,6 @@ src/Com.Madana.APIClient/Model/JsonProcess.cs
 src/Com.Madana.APIClient/Model/JsonRunConfig.cs
 src/Com.Madana.APIClient/Model/JsonSGXInfo.cs
 src/Com.Madana.APIClient/Model/JsonSignedData.cs
-src/Com.Madana.APIClient/Model/JsonSignedDataUtils.cs
 src/Com.Madana.APIClient/Model/JsonV1Event.cs
 src/Com.Madana.APIClient/Model/JsonV1EventList.cs
 src/Com.Madana.APIClient/Model/JsonV1EventSeries.cs

@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Uid** | **string** |  | [optional] 
 **Kind** | **string** |  | [optional] 
-**Name** | **string** |  | [optional] 
+**Controller** | **bool** |  | [optional] 
 **BlockOwnerDeletion** | **bool** |  | [optional] 
 **ApiVersion** | **string** |  | [optional] 
-**Controller** | **bool** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Uid** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
