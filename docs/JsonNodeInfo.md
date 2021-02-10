@@ -5,23 +5,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**IpfsInfo** | [**JsonIPFSSystemInfo**](JsonIPFSSystemInfo.md) |  | [optional] 
-**CpuFrequency** | **string** |  | [optional] 
-**OperatingSystem** | **string** |  | [optional] 
 **Processors** | **List&lt;string&gt;** |  | [optional] 
-**PublicKey** | **string** |  | [optional] 
-**HardwareFirmware** | **string** |  | [optional] 
-**HardwareBaseboard** | **string** |  | [optional] 
-**ConnectionURL** | **string** |  | [optional] 
-**CpuModel** | **string** |  | [optional] 
-**Owner** | **string** |  | [optional] 
-**OperatingSystemUptime** | **decimal** |  | [optional] 
-**Status** | **string** |  | [optional] 
-**CpuPhysicalCores** | **int** |  | [optional] 
 **CpuFamily** | **string** |  | [optional] 
-**CpuLogicalCount** | **int** |  | [optional] 
-**SgxInfo** | [**JsonSGXInfo**](JsonSGXInfo.md) |  | [optional] 
+**Owner** | **string** |  | [optional] 
+**Status** | **string** |  | [optional] 
+**CpuFrequency** | **string** |  | [optional] 
+**HardwareFirmware** | **string** |  | [optional] 
 **Memory** | **string** |  | [optional] 
+**OperatingSystemUptime** | **decimal** |  | [optional] 
+**IpfsInfo** | [**JsonIPFSSystemInfo**](JsonIPFSSystemInfo.md) |  | [optional] 
+**SgxInfo** | [**JsonSGXInfo**](JsonSGXInfo.md) |  | [optional] 
+**CpuModel** | **string** |  | [optional] 
+**ConnectionURL** | **string** |  | [optional] 
+**PublicKey** | **string** |  | [optional] 
+**OperatingSystem** | **string** |  | [optional] 
+**CpuPhysicalCores** | **int** |  | [optional] 
+**HardwareBaseboard** | **string** |  | [optional] 
+**CpuLogicalCount** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

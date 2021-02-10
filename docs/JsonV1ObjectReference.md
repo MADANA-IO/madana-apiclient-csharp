@@ -6,12 +6,12 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** |  | [optional] 
-**Namespace** | **string** |  | [optional] 
 **ResourceVersion** | **string** |  | [optional] 
-**ApiVersion** | **string** |  | [optional] 
-**Uid** | **string** |  | [optional] 
-**FieldPath** | **string** |  | [optional] 
 **Kind** | **string** |  | [optional] 
+**FieldPath** | **string** |  | [optional] 
+**ApiVersion** | **string** |  | [optional] 
+**Namespace** | **string** |  | [optional] 
+**Uid** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

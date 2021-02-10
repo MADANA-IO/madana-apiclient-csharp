@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Port** | **string** |  | [optional] 
 **Name** | **string** |  | [optional] 
+**Port** | **string** |  | [optional] 
 **Protocol** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

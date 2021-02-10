@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**CreateNode**](NodeServiceApi.md#createnode) | **POST** /nodes/v2 | 
 [**GetBootstrap**](NodeServiceApi.md#getbootstrap) | **GET** /nodes/bootstrap | 
+[**GetNodeLicenses**](NodeServiceApi.md#getnodelicenses) | **GET** /nodes/licenses | 
 [**GetNodeV2**](NodeServiceApi.md#getnodev2) | **GET** /nodes/v2/{ident} | 
 [**GetNodes2**](NodeServiceApi.md#getnodes2) | **GET** /nodes | 
 [**GetNodesV2**](NodeServiceApi.md#getnodesv2) | **GET** /nodes/v2 | Returns UUIDs of existing analyses.
@@ -130,6 +131,78 @@ namespace Example
 ### Parameters
 
 This endpoint does not need any parameter.
+
+### Return type
+
+**System.IO.Stream**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** |  |  -  |
+
+[[Back to top]](#)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## GetNodeLicenses
+
+> System.IO.Stream GetNodeLicenses (string active = null)
+
+
+
+### Example
+
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Com.Madana.APIClient.Api;
+using Com.Madana.APIClient.Client;
+using Com.Madana.APIClient.Model;
+
+namespace Example
+{
+    public class GetNodeLicensesExample
+    {
+        public static void Main()
+        {
+            Configuration.Default.BasePath = "http://api.madana.io/rest";
+            var apiInstance = new NodeServiceApi(Configuration.Default);
+            var active = active_example;  // string |  (optional)  (default to "true")
+
+            try
+            {
+                System.IO.Stream result = apiInstance.GetNodeLicenses(active);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException e)
+            {
+                Debug.Print("Exception when calling NodeServiceApi.GetNodeLicenses: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **active** | **string**|  | [optional] [default to &quot;true&quot;]
 
 ### Return type
 
